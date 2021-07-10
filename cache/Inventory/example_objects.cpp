@@ -3,6 +3,14 @@
 
 using namespace std;
 
+/*TODO:
+ * yне треба массива символу - строки норм
+ * данела казала
+ *
+ * */
+
+
+
 class Object {
 public:
 /* Example Objects: *these are all objects in the game* */
