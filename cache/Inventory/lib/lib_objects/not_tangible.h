@@ -1,15 +1,25 @@
-#ifndef CYTON_CODE_OBJECT_NOT_TANGIBLE_CPP
-#define CYTON_CODE_OBJECT_NOT_TANGIBLE_CPP
+#ifndef CYTON_CODE_OBJECT_NOT_TANGIBLE_GAME
+#define CYTON_CODE_OBJECT_NOT_TANGIBLE_GAME
 
 
 #include "object.h"
 
 class NotTangible : public Object {
+/* Example NotTangibles: Cell Slot ... */
+
 public:
-/* Example NotTangible: Cell Slot ... */
+
     NotTangible() {
-        this->get_my_types().push_back("NotTangible");
+        this->add_my_type("NotTangible");
+
+        cout << "NotTangible created" << endl;
+    }
+
+    ~NotTangible() {
+
+        cout << "NotTangible killed" << endl;
     }
 };
 
-#endif // CYTON_CODE_OBJECT_NOT_TANGIBLE_CPP
+#endif // CYTON_CODE_OBJECT_NOT_TANGIBLE_GAME
+

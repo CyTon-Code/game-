@@ -7,9 +7,9 @@
 // TEST:
 int main() {
     Block();
+    Cell();
     Essence();
     NotTangible();
-
     Object();
-    return 0;
+    Slot();
 }
