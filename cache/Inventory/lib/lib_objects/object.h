@@ -20,7 +20,7 @@ public:
     }
 
     ~Object() {
-        this->_clear();
+        this->clear_object();
 
         cout << "Object killed" << endl << endl;
     }
@@ -33,15 +33,29 @@ public:
         this->types_of_friends.push_back(value);
     }
 
-    void _clear() {
+    void clear_my_res() {
         this->my_res.clear();
+    }
+
+    void clear_my_types() {
         this->my_types.clear();
+    }
+    void clear_types_ignore() {
         this->types_ignore.clear();
+    }
+    void clear_types_of_friends() {
         this->types_of_friends.clear();
     }
-    void clear();
+    void clear_object(){
+        this->clear_my_res();
+        this->clear_my_types();
+        this->clear_types_ignore();
+        this->clear_types_of_friends();
+    }
 
 private:
+    // имя файла - обьекта:
+    std::string name;
 
     // типы за которые меня принимают:
     std::vector<std::string> my_types;
@@ -96,6 +110,14 @@ geters:
 
     // std::vector<std::string> get_types_ignore() {
         // return this->types_ignore;
+    // }
+
+    // void save_my_res() {
+        // this->my_res.save(name);
+    // }
+
+    // void upload_my_res() {
+        // this->upload(name);
     // }
 
 

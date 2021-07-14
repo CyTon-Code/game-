@@ -18,22 +18,24 @@ public:
     }
 
     ~Slot() {
+        this->clear_types_of_changes();
 
         cout << "Slot killed" << endl;
     }
 
-    void clear(){
-        this->_clear();
-        this->_clear_types_changes();
+    void clear_slot(){
+        this->clear_object();
+        this->clear_types_of_changes();
     }
-private:
 
-    // типы изменяющие статистику объекта в котором нахожусь:
-    std::vector<std::string> types_of_changes;
-    void _clear_types_changes(){
+    void clear_types_of_changes(){
         this->types_of_changes.clear();
     }
 
+private:
+
+    // типы влияющие на статистику объекта в котором нахожусь:
+    std::vector<std::string> types_of_changes;
 };
 
 #endif // CYTON_CODE_OBJECT_NOT_TANGIBLE_SLOT_GAME

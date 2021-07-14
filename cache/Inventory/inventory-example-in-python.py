@@ -8,10 +8,10 @@ class Cell:
   In this cell, you can store any item
  """
  res = []
- 
+
  def is_empty(self):
   return not len(self.res)
- 
+
  pass
 
 class Slot(Cell):
@@ -62,16 +62,16 @@ class Belt(Slot):
  """
  lvl = 0
  pockets = []
- 
+
  def update_pockets(self):
   self.pockets = [ToolForCraft() for _ in range(5+self.lvl)]
   pass
-  
+
  def __init__(self):
   self.lvl = 0
   self.update_pockets()
   pass
- 
+
  pass
 
 class Bag(Block):
@@ -140,10 +140,10 @@ class Inventory:
   Equipment - special cells (slots) affecting characteristics of character
   Hand crafts are list of crafts that can be used without "Forge" and "Workbench"
  """
- 
+
  slots = [Torb()]  # - for Helmet, Sword, Hand ...
  crafts = [Craft()]  # - a Helmet, Sword, Hand ...
- 
+
  def init(self):
   self.crafts += download_crafts()
   self.slots += download_slots()
