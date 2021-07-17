@@ -1,8 +1,10 @@
-#ifndef CYTON_CODE_OBJECT_ESSENCE_GAME
-#define CYTON_CODE_OBJECT_ESSENCE_GAME
+// Autor Dal Bo Yob
+
+#ifndef GAME_OBJECT_ESSENCE
+#define GAME_OBJECT_ESSENCE
 
 
-#include "object.h"
+#include "./object.h"
 
 class Essence : public Object {
 /* Example Essences: Skeleton Zombie Druid ... */
@@ -21,5 +23,5 @@ public:
     }
 };
 
-#endif // CYTON_CODE_OBJECT_ESSENCE_GAME
+#endif // GAME_OBJECT_ESSENCE
 

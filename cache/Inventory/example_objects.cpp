@@ -1,3 +1,5 @@
+// Autor Dal Bo Yob
+
 /*TODO:
  *
  * */
@@ -9,11 +11,12 @@
 
 
 int main() {
-    system("echo   Welcome to the game!");
+    system("echo   Welcome to the game!"); // goto add mesages
 
     Block();
     Cell();
     Essence();
+    Mouse();
     NotTangible();
     Object();
     Slot();

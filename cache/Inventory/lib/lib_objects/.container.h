@@ -1,8 +1,8 @@
-#ifndef CYTON_CODE_OBJECT_ESSENCE_CELL_GAME
-#define CYTON_CODE_OBJECT_ESSENCE_CELL_GAME
+#ifndef GAME_OBJECT_NOT__TANGIBLE_CONTAINER
+#define GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 
 
-#include "not_tangible.h"
+#include "./not_tangible.h"
 
 class Container : public NotTangible {
 /* Example Container: Cell Slot Panel ... */
@@ -30,5 +30,5 @@ private:
     }
 };
 
-#endif // CYTON_CODE_OBJECT_ESSENCE_CELL_GAME
+#endif // GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 

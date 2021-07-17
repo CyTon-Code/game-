@@ -1,8 +1,10 @@
-#ifndef CYTON_CODE_OBJECT_BLOCK_GAME
-#define CYTON_CODE_OBJECT_BLOCK_GAME
+// Autor Dal Bo Yob
+
+#ifndef GAME_OBJECT_BLOCK
+#define GAME_OBJECT_BLOCK
 
 
-#include "object.h"
+#include "./object.h"
 
 class Block : public Object {
 /* Example Blocks: Grass Rock Dirt ... */
@@ -21,5 +23,5 @@ public:
     }
 };
 
-#endif // CYTON_CODE_OBJECT_BLOCK_GAME
+#endif // GAME_OBJECT_BLOCK
 

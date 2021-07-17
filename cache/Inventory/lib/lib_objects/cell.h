@@ -1,8 +1,10 @@
-#ifndef CYTON_CODE_OBJECT_NOT_TANGIBLE_CELL_GAME
-#define CYTON_CODE_OBJECT_NOT_TANGIBLE_CELL_GAME
+// Autor Dal Bo Yob
+
+#ifndef GAME_OBJECT_NOT__TANGIBLE_CELL
+#define GAME_OBJECT_NOT__TANGIBLE_CELL
 
 
-#include "not_tangible.h"
+#include "./not__tangible.h"
 
 class Cell : public NotTangible {
 /* Example Cells: Cell ... */
@@ -22,5 +24,5 @@ public:
     }
 };
 
-#endif // CYTON_CODE_OBJECT_NOT_TANGIBLE_CELL_GAME
+#endif // GAME_OBJECT_NOT__TANGIBLE_CELL
 
