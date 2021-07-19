@@ -3,7 +3,6 @@
 #ifndef GAME_OBJECT_NOT__TANGIBLE
 #define GAME_OBJECT_NOT__TANGIBLE
 
-
 #include "./object.h"
 
 class NotTangible : public Object {

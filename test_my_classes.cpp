@@ -4,11 +4,9 @@
  *
  * */
 
-#include "./syntactic_sugar.h"
 #include "./lib/objects.h"
 
 // TEST:
-
 
 int main() {
     system("echo   Welcome to the game!"); // goto add mesages
@@ -21,3 +19,4 @@ int main() {
     Object();
     Slot();
 }
+

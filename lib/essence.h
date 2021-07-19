@@ -3,11 +3,10 @@
 #ifndef GAME_OBJECT_ESSENCE
 #define GAME_OBJECT_ESSENCE
 
-
 #include "./object.h"
 
 class Essence : public Object {
-/* Example Essences: Skeleton Zombie Druid ... */
+/* Example Essences: Skeleton Zombie Normal ... */
 
 public:
 

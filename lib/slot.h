@@ -3,7 +3,6 @@
 #ifndef GAME_OBJECT_NOT__TANGIBLE_SLOT
 #define GAME_OBJECT_NOT__TANGIBLE_SLOT
 
-
 #include "./not__tangible.h"
 
 class Slot : public NotTangible {

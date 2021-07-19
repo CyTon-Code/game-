@@ -1,8 +1,9 @@
+// Autor Dal Bo Yob
+
 #ifndef GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 #define GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 
-
-#include "./not_tangible.h"
+#include "./not__tangible.h"
 
 class Container : public NotTangible {
 /* Example Container: Cell Slot Panel ... */

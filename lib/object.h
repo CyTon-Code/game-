@@ -7,8 +7,7 @@
 #include <vector>
 
 // debug and test:
-using std::cout, std::endl;
-
+using std::cout; using std::endl;
 
 class Object {
 /* Example Objects: *these are all objects in the game* */
@@ -77,9 +76,6 @@ private:
 };
 
 #endif // GAME_OBJECT
-
-
-
 
 
 // cache:
