@@ -7,7 +7,7 @@
 #include <vector>
 
 // debug and test:
-using std::cout; using std::endl;
+using std::cout, std::endl;
 
 class Object {
 /* Example Objects: *these are all objects in the game* */
