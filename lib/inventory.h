@@ -1,2 +1,0 @@
-// Autor Dal Bo Yob
-
