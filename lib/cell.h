@@ -18,7 +18,6 @@ public:
     }
 
     ~Cell() {
-
         cout << "Cell killed" << endl;
     }
 };
