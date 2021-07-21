@@ -13,11 +13,13 @@ public:
     Man() {
         this->add_my_type("Man");
 
+        // this->add slots for objects of Essence-Man (head, body, foot)
+
+
         cout << "Man created" << endl;
     }
 
     ~Man() {
-
         cout << "Man killed" << endl;
     }
 };
