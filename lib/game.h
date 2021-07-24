@@ -1,8 +1,66 @@
 // Autor Dal Bo Yob
 
-#ifndef GAME_OBJECT
-#define GAME_OBJECT
+#ifndef GAME
+#define GAME
 
+
+
+// find example
+#include <iostream>     // std::cout
+#include <algorithm>    // std::find
+#include <vector>       // std::vector
+
+
+
+namespace game {
+	// search in vector
+    // using std::find with vector and iterator:
+   	bool search(auto *object, std::string name){
+		return std::find(object.begin(), object.end(), name) != object.end();
+	}
+
+	// push (back) in vrctor
+	void add(auto *object, std::string value){
+        object.push_back(value);
+	}
+
+
+	// save
+	void save(auto *object){
+		/*
+			file={name}.game
+			touch $file // creat file
+			save(object, $file)
+		*/
+	}
+
+
+	// remove
+
+
+	// get
+
+
+	// set
+
+
+	class Game {
+		// map:
+	    std::vector<std::string> my_name_blocks_on_map;
+	    std::vector<std::mob> my_mobs_on_map;
+	    // ... others objects on map
+
+
+		// TODO add class Objects in objects.h
+		// Objects all_objects;
+	    // all objects:
+        std::vector<std::cell> all_cells;
+        std::vector<std::slot> all_slots;
+        // ... all types ????
+	};
+};
+
+/*
 #include <iostream>
 #include <vector>
 
@@ -10,7 +68,7 @@
 using std::cout, std::endl;
 
 class Object {
-/* Example Objects: *these are all objects in the game* */
+/ * Example Objects: *these are all objects in the game* * /
 
 public:
 
@@ -84,8 +142,8 @@ private:
     // ресурсы которые я в себе храню
     std::vector<std::string> my_res;
 };
-
-#endif // GAME_OBJECT
+*/
+#endif // GAME
 
 
 // cache:
