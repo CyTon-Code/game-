@@ -3,61 +3,17 @@
 #ifndef GAME
 #define GAME
 
+#include "objects.h"
+
+class Game {
+    // map:
+    std::vector<std::string> my_name_blocks_on_map;
+    std::vector<std::mob> my_mobs_on_map;
+    // ... others objects on map
 
 
-// find example
-#include <iostream>     // std::cout
-#include <algorithm>    // std::find
-#include <vector>       // std::vector
-
-
-
-namespace game {
-	// search in vector
-    // using std::find with vector and iterator:
-   	bool search(auto *object, std::string name){
-		return std::find(object.begin(), object.end(), name) != object.end();
-	}
-
-	// push (back) in vrctor
-	void add(auto *object, std::string value){
-        object.push_back(value);
-	}
-
-
-	// save
-	void save(auto *object){
-		/*
-			file={name}.game
-			touch $file // creat file
-			save(object, $file)
-		*/
-	}
-
-
-	// remove
-
-
-	// get
-
-
-	// set
-
-
-	class Game {
-		// map:
-	    std::vector<std::string> my_name_blocks_on_map;
-	    std::vector<std::mob> my_mobs_on_map;
-	    // ... others objects on map
-
-
-		// TODO add class Objects in objects.h
-		// Objects all_objects;
-	    // all objects:
-        std::vector<std::cell> all_cells;
-        std::vector<std::slot> all_slots;
-        // ... all types ????
-	};
+    // TODO add class Objects in objects.h
+    Objects my_objects;
 };
 
 /*

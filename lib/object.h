@@ -3,6 +3,9 @@
 #ifndef GAME_OBJECT
 #define GAME_OBJECT
 
+
+#include "functions.h"
+
 #include <iostream>
 #include <vector>
 
@@ -32,15 +35,15 @@ public:
     }
 
     void add_type_friend(std::string value) {
-        this->types_of_friends.push_back(value);
+        game::add(this->types_of_friends, value);
     }
 
     void add_type_ignore(std::string value) {
-        this->types_ignore.push_back(value);
+        game::add(this->types_ignore, value);
     }
 
     void add_my_res(std::string value) {
-        this->my_res.push_back(value);
+        game::add(this->my_res, value);
     }
 
 

@@ -5,7 +5,7 @@
 
 #include "./object.h"
 
-class Essence : public Object {
+class Essence : public Object, public Tangible{
 /* Example Essences: Skeleton Zombie Normal ... */
 
 public:
