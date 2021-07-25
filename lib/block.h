@@ -12,6 +12,7 @@ class Block : public Object {
 public:
 
     Block() {
+        this->add_my_type("Tangible");
         this->add_my_type("Block");
 
         cout << "Block created" << endl;

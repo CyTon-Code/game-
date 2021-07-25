@@ -20,6 +20,9 @@ public:
 
         cout << "Tangible killed" << endl;
     }
+
+private:
+    long double X, Y, Z;
 };
 
 #endif // GAME_OBJECT_TANGIBLE

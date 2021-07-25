@@ -1,12 +1,12 @@
 // Autor Dal Bo Yob
 
-#ifndef GAME_OBJECT_NOT__TANGIBLE_SLOT_MOUSE
-#define GAME_OBJECT_NOT__TANGIBLE_SLOT_MOUSE
+#ifndef GAME_OBJECT_NOT__TANGIBLE_CELL_MOUSE
+#define GAME_OBJECT_NOT__TANGIBLE_CELL_MOUSE
 
 
-#include "./slot.h"
+#include "./cell.h"
 
-class Mouse : public Slot {
+class Mouse : public Cell {
 /* Example Slots: Mouse ... */
 
 public:
@@ -22,5 +22,5 @@ public:
     }
 };
 
-#endif // GAME_OBJECT_NOT__TANGIBLE_SLOT_MOUSE
+#endif // GAME_OBJECT_NOT__TANGIBLE_CELL_MOUSE
 

@@ -21,6 +21,7 @@ public:
         cout << "Container killed" << endl;
     }
 
+    void clearContainer(){}
 private:
 
     // ресурсы которые я в себе храню

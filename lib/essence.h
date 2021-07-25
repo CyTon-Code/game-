@@ -5,12 +5,13 @@
 
 #include "./object.h"
 
-class Essence : public Object, public Tangible{
+class Essence : public Object  {
 /* Example Essences: Skeleton Zombie Normal ... */
 
 public:
 
     Essence() {
+        this->add_my_type("Tangible");
         this->add_my_type("Essence");
 
         cout << "Essence created" << endl;

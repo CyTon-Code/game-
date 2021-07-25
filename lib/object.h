@@ -4,10 +4,7 @@
 #define GAME_OBJECT
 
 
-#include "functions.h"
-
-#include <iostream>
-#include <vector>
+#include "fun.h"
 
 // debug and test:
 using std::cout, std::endl;
@@ -35,15 +32,15 @@ public:
     }
 
     void add_type_friend(std::string value) {
-        game::add(this->types_of_friends, value);
+        fun::add(this->types_of_friends, value);
     }
 
     void add_type_ignore(std::string value) {
-        game::add(this->types_ignore, value);
+        fun::add(this->types_ignore, value);
     }
 
     void add_my_res(std::string value) {
-        game::add(this->my_res, value);
+        fun::add(this->my_res, value);
     }
 
 

@@ -11,7 +11,13 @@ class Cell : public NotTangible {
 public:
 
     Cell() {
+        // TODO: maybe need do vector fun:
+        // this->add_my_type("Container", "Cell");
+
+
+        this->add_my_type("Container");
         this->add_my_type("Cell");
+
         this->add_type_friend("all");
 
         cout << "Cell created" << endl;

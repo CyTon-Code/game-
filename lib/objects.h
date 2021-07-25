@@ -1,30 +1,45 @@
 // Autor Dal Bo Yob
 
-#ifndef GAME_OBJECTS
-#define GAME_OBJECTS
 
 # include "./object.h"
 
 # include "./block.h"
 # include "./cell.h"
 # include "./essence.h"
-# include "./inventory.h"
+# include "./fun.h"
+# include "./game.h"
+// # include "./inventory.h"
 # include "./man.h"
 # include "./mouse.h"
 # include "./not__tangible.h"
 # include "./slot.h"
+# include "./test__fun.h"
 
 // # include "./.container.h"
+# include "./.tangible.h"
 
+#ifndef GAME_OBJECTS
+#define GAME_OBJECTS
 
 class Objects  {
+/* Objects: store all objects in game */
+
+
 public:
-	// Objects all_objects;
-	// all objects:
-	std::vector<std::cell> all_cells;
-	std::vector<std::slot> all_slots;
-	// ... all types ????
-}
+    Objects() {
+        cout << "Objects created" << endl;
+    }
+
+    ~Objects() {
+        cout << "Objects killed" << endl << endl;
+    }
+
+    // Objects all_objects;
+    // all objects:
+    std::vector<Cell> all_cells;
+    std::vector<Slot> all_slots;
+    // ... all types ????
+};
 
 #endif // GAME_OBJECTS
 

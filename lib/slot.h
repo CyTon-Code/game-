@@ -11,6 +11,7 @@ class Slot : public NotTangible {
 public:
 
     Slot() {
+        this->add_my_type("Container");
         this->add_my_type("Slot");
 
         cout << "Slot created" << endl;

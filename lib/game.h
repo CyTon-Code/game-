@@ -4,16 +4,21 @@
 #define GAME
 
 #include "objects.h"
+#include "fun.h"
 
 class Game {
+public:
+
+
+
     // map:
     std::vector<std::string> my_name_blocks_on_map;
-    std::vector<std::mob> my_mobs_on_map;
+    std::vector<std::string> my_name_mobs_on_map;
     // ... others objects on map
 
 
     // TODO add class Objects in objects.h
-    Objects my_objects;
+    Objects my_objects = Objects();
 };
 
 /*

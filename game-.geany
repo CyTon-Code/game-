@@ -27,7 +27,21 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=-1
+current_page=5
+FILE_NAME_0=38;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Ftest%2Ftest_my_classes.cpp;0;4
+FILE_NAME_1=60;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fobject.h;0;4
+FILE_NAME_2=332;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fobjects.h;0;4
+FILE_NAME_3=303;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fgame.h;0;4
+FILE_NAME_4=125;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fblock.h;0;4
+FILE_NAME_5=443;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2F.container.h;0;4
+FILE_NAME_6=268;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fcell.h;0;4
+FILE_NAME_7=1034;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Ffun.h;0;4
+FILE_NAME_8=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fman.h;0;4
+FILE_NAME_9=413;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fmouse.h;0;4
+FILE_NAME_10=130;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fnot__tangible.h;0;4
+FILE_NAME_11=253;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fslot.h;0;4
+FILE_NAME_12=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Ftest__fun.h;0;4
+FILE_NAME_13=388;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2F.tangible.h;0;4
 
 [VTE]
 last_dir=/home/cytoncode
