@@ -1,9 +1,9 @@
 /*
  * File: slot.hpp
  * Autor: Dal Bo Yob
- * Language: C++
+ * Language: Cpp
  *
- * Copyright 2021 CyTon Code <cytoncode@localhost.localdomain>
+ * Copyright 2021 Game Code <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,9 +31,10 @@
 
 class Slot: public NotTangible
 {
-/* Example Slots: Slot ... */
+    /* Example Slots: Slot ... */
 
     public:
+
         Slot()
         {
             this->add_my_type("Container");
@@ -63,6 +64,7 @@ class Slot: public NotTangible
         }
 
     private:
+
         // типы влияющие на статистику объекта в котором нахожусь:
         std::vector<std::string> types_of_changes;
 };

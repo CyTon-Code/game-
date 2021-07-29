@@ -1,4 +1,6 @@
 game-
-game-.o
+*.o
 readme.sh
 README.html
+*.gch
+

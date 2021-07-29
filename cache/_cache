@@ -1,0 +1,50 @@
+
+// cache:
+
+// may be need use:
+/*
+    // copy fun:
+    Object(const Object * value) {
+        this->my_types = value->my_types;
+        this->types_ignore = value->types_ignore;
+        this->types_of_friends = value->types_of_friends;
+
+    }
+
+
+
+    / *TODO:
+     *
+     * * /
+    // public:
+    // remove_type(type){my_type.remove(type)}
+    // add_type(type){my_type.push_back(type)}
+    // is_type(type){my_type.search_type(type)}
+
+
+geters:
+    // std::vector<std::string> get_my_types() {
+        // return this->my_types;
+    // }
+
+    // std::vector<std::string> get_types_of_friends() {
+        // return this->types_of_friends;
+    // }
+
+    // std::vector<std::string> get_types_ignore() {
+        // return this->types_ignore;
+    // }
+
+    // void save_my_res() {
+        // this->my_res.save(name);
+    // }
+
+    // void upload_my_res() {
+        // this->upload(name);
+    // }
+
+
+
+ *
+ * */
+

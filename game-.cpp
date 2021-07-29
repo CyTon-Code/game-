@@ -1,9 +1,9 @@
 /*
- * File: main.cpp
+ * File: game-.cpp
  * Autor: Dal Bo Yob
- * Language: C++
+ * Language: Cpp
  *
- * Copyright 2021 CyTon Code <cytoncode@localhost.localdomain>
+ * Copyright 2021 Game Code <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,10 +23,18 @@
  *
  */
 
+
 #include "./lib/game.hpp"
 
 int main()
 {
+    Tangible();
+    Coordinates();
+    Exp();
+    Xp();
+
+    // Slot();
+
     // 1. terminal_interface {select planet, u/mount galaxy, next, exit} - run bash
     // 2. load configs, data - create map, objects... - run cpp game --planet your_planet
     // 3. game: terminal_interface {save/load/del/add/find/edit/... object/s, close}
