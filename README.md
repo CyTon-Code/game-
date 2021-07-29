@@ -2,6 +2,6 @@
 Я хотел бы сделать свою игру
 
 
-![png](icon.png)
+![png](photo/icon.png)
 
 
