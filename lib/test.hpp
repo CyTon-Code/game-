@@ -1,5 +1,5 @@
 /*
- * File: test__fun.hpp
+ * File: test.hpp
  * Autor: Dal Bo Yob
  * Language: Cpp
  *
@@ -24,8 +24,8 @@
  */
 
 
-#ifndef GAME_TEST__FUN
-#define GAME_TEST__FUN
+#ifndef GAME_TEST
+#define GAME_TEST
 
 namespace test
 {
@@ -48,8 +48,13 @@ namespace test
     {
         std::cerr << _name << " was copied" << std::endl;
     }
+
+    void cleared(std::string _name = "Array")
+    {
+        std::cerr << _name << " was cleared" << std::endl;
+    }
 };
 
-#endif // GAME_TEST__FUN
+#endif // GAME_TEST
 
 // debug  log and print

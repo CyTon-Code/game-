@@ -29,7 +29,7 @@
 #include "./cell.hpp"
 #include "./container.hpp"
 #include "./essence.hpp"
-#include "./fun.hpp"
+#include "./tools.hpp"
 
 // #include "./inventory.hpp"
 #include "./man.hpp"
@@ -38,11 +38,11 @@
 #include "./object.hpp"
 #include "./slot.hpp"
 #include "./tangible.hpp"
-#include "./test__fun.hpp"
+#include "./test.hpp"
 
 
 #include "objects.hpp" // Objects
-#include "fun.hpp" //
+#include "tools.hpp" //
 #include "./map.hpp" // Map
 
 #ifndef GAME

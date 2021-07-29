@@ -33,7 +33,7 @@
 #include "./exp.hpp"
 #include "./xp.hpp"
 
-#include "./test__fun.hpp"
+#include "./test.hpp"
 
 class Tangible : public Object
 {

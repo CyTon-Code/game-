@@ -29,7 +29,7 @@
 
 #include "./object.hpp"
 
-#include "./test__fun.hpp"
+#include "./test.hpp"
 
 class Xp : public Object
 {
@@ -39,8 +39,7 @@ class Xp : public Object
 
         Xp()
         {
-            // TODO: if Xp not found then add:
-                this->add_my_type("Xp");
+            this->add_my_type("Xp");
 
             test::created("Xp");
         }

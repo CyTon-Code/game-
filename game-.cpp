@@ -28,10 +28,15 @@
 
 int main()
 {
-    Tangible();
-    Coordinates();
-    Exp();
-    Xp();
+    // Tangible();
+    // Coordinates();
+    // Exp();
+    // Xp();
+    Slot slot = Slot();
+    slot.add_my_type("Slot");
+    tools::print(slot.get_my_type());
+    cout << tools::find(slot.get_my_type(), "Object") << endl;
+    cout << tools::find(slot.get_my_type(), "bject") << endl;
 
     // Slot();
 

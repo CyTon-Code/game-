@@ -35,13 +35,13 @@ class Slot: public NotTangible
 
     public:
 
-        Slot()
-        {
-            this->add_my_type("Container");
-            this->add_my_type("Slot");
+      Slot()
+    {
+        this->add_my_type("Container");
+        this->add_my_type("Slot");
 
-            cout << "Slot created" << endl;
-        }
+        cout << "Slot created" << endl;
+    }
 
 
         ~Slot()
@@ -59,8 +59,9 @@ class Slot: public NotTangible
 
         void clearTypesOfChanges()
         {
-            cout << "Object -> types of changes -> clear" << endl;
             this->types_of_changes.clear();
+
+            test::cleared("types of changes");
         }
 
     private:

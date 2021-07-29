@@ -1,5 +1,5 @@
 /*
- * File: fun.hpp
+ * File: tools.hpp
  * Autor: Dal Bo Yob
  * Language: Cpp
  *
@@ -24,8 +24,8 @@
  */
 
 
-#ifndef GAME_FUN
-#define GAME_FUN
+#ifndef GAME_TOOLS
+#define GAME_TOOLS
 
 // find example
 // #include <algorithm>    // std::find
@@ -33,33 +33,55 @@
 #include <vector>       // std::vector
 #include <string>       // std::string
 
-namespace fun
+namespace tools
 {
-    // search in vector
-    // using std::find with vector and iterator:
-    bool search(const std::vector<std::string> &array, std::string name)
+    // echo-print-write this vector in cout
+    void echo(const std::vector<std::string> array)
     {
-        for (std::string i : array)
+        for (auto i: array)
+            std::cout << i << " ";
+        std::cout << std::endl;
+    }
+
+    // echo-print-write this vector in cout
+    void print(const std::vector<std::string> array)
+    {
+        std::cout << "[";
+        for (auto i: array)
+            std::cout << i << ", ";
+        std::cout << "]" << std::endl;
+    }
+
+    // find in vector
+    bool find(const std::vector<std::string> &array, std::string name)
+    {
+        for (auto i: array)
             if (i == name)
                 return true;
         return false;
-        // return std::find(object.begin(), object.end(), name) != object.end();
     }
 
-    // push (back) in vector
+
+    // push (back) if value not found in array
     void add(std::vector<std::string> &array, std::string value)
     {
-        // TODO: if value not found in array then add:
+        if (not tools::find(array, value))
             array.push_back(value);
     }
 
 
+    // push (back) in vector
+    void append(std::vector<std::string> &array, std::string value)
+    {
+        array.push_back(value);
+    }
+
     // save object in file
     template <class type>
-    void save(type *object)
+    void save(type &object)
     {
         /*
-            file={name}.game
+            file={object.name}.game
             touch $file // creat file
             save(object, $file)
         */
@@ -78,5 +100,5 @@ namespace fun
     // set
 };
 
-#endif // GAME_FUN
+#endif // GAME_TOOLS
 

@@ -29,7 +29,7 @@
 
 #include "./object.hpp"
 
-#include "./test__fun.hpp"
+#include "./test.hpp"
 
 class Exp : public Object
 {

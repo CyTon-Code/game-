@@ -28,9 +28,9 @@
 #define GAME_ELEMENT
 
 
-#include "fun.hpp"
+#include "tools.hpp"
 
-#include "./test__fun.hpp"
+#include "./test.hpp"
 
 // debug and test:
 using std::cout, std::endl;
@@ -43,6 +43,7 @@ class Element
 
         Element()
         {
+            std::cout << std::endl;
             test::created("Element");
         }
 
@@ -51,13 +52,13 @@ class Element
             this->clearType();
 
             test::killed("Element");
-            cout << endl;
+            std::cout << std::endl;
         }
 
 
         void add_my_res(std::string value)
         {
-            fun::add(this->my_res, value);
+            tools::add(this->my_res, value);
         }
 
 

@@ -28,9 +28,9 @@
 #define GAME_OBJECT
 
 
-#include "fun.hpp"
+#include "tools.hpp"
 
-#include "./test__fun.hpp"
+#include "./test.hpp"
 
 // debug and test:
 using std::cout, std::endl;
@@ -45,6 +45,7 @@ class Object
         {
             this->add_my_type("Object");
 
+            std::cout << std::endl;
             test::created("Object");
         }
 
@@ -53,52 +54,63 @@ class Object
             this->clearObject();
 
             test::killed("Object");
+            std::cout << std::endl;
+        }
+
+
+        std::vector<std::string> get_my_type()
+        {
+            return this->my_types;
         }
 
 
         void add_my_type(std::string value)
         {
-            fun::add(this->my_types, value);
+            tools::add(this->my_types, value);
         }
 
         void add_type_friend(std::string value)
         {
-            fun::add(this->types_of_friends, value);
+            tools::add(this->types_of_friends, value);
         }
 
         void add_type_ignore(std::string value)
         {
-            fun::add(this->types_ignore, value);
+            tools::add(this->types_ignore, value);
         }
 
         void add_my_res(std::string value)
         {
-            fun::add(this->my_res, value);
+            tools::add(this->my_res, value);
         }
 
 
         void clearMyRes()
         {
-            cout << "Object -> my res -> clear" << endl;
             this->my_res.clear();
+
+            test::cleared("my res");
         }
 
         void clearMyTypes()
         {
-            cout << "Object -> my types -> clear" << endl;
             this->my_types.clear();
+
+            test::cleared("my types");
         }
 
         void clearTypesignore()
         {
-            cout << "Object -> types ignore -> clear" << endl;
             this->types_ignore.clear();
+
+            test::cleared("types ignore");
         }
 
         void clearTypesOfFriends()
         {
-            cout << "Object -> types of friends -> clear" << endl;
             this->types_of_friends.clear();
+
+            test::cleared("types of friends");
         }
 
         void clearObject()
