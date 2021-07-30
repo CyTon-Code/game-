@@ -27,11 +27,11 @@
 #ifndef GAME_OBJECT_XP
 #define GAME_OBJECT_XP
 
-#include "./object.hpp"
+#include "./element.hpp"
 
 #include "./test.hpp"
 
-class Xp : public Object
+class Xp : public Element
 {
     /* Example Xps: Xp ... */
 
@@ -39,8 +39,6 @@ class Xp : public Object
 
         Xp()
         {
-            this->add_my_type("Xp");
-
             test::created("Xp");
         }
 
@@ -62,4 +60,3 @@ class Xp : public Object
 };
 
 #endif // GAME_OBJECT_XP
-

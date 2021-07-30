@@ -19,7 +19,7 @@ indent_mode=2
 
 [project]
 name=game-
-base_path=/home/cytoncode/GIT/game-/
+base_path=/home/gnu/git/game-/
 description=
 
 [long line marker]
@@ -27,12 +27,20 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=231;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Ftest%2Ftest_my_classes.cpp;0;4
-FILE_NAME_1=1322;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fgame.hpp;0;4
-FILE_NAME_2=255;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fmap.hpp;0;4
-FILE_NAME_3=1004;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Flib%2Fslot.hpp;0;4
-FILE_NAME_4=1213;C++;0;EUTF-8;0;1;0;%2Fhome%2Fcytoncode%2FGIT%2Fgame-%2Fgame-.cpp;0;4
+current_page=2
+FILE_NAME_0=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Fgame-.cpp;0;4
+FILE_NAME_1=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Flib%2Fslot.hpp;0;4
+FILE_NAME_2=1413;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Flib%2Ftangible.hpp;0;4
+FILE_NAME_3=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Flib%2Ftest.hpp;0;4
 
 [VTE]
-last_dir=/home/cytoncode
+last_dir=/home/gnu/git/game-/lib
+
+[prjorg]
+source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
+header_patterns=*.h;*.H;*.hpp;*.hxx;*.h++;*.hh;
+ignored_dirs_patterns=.*;CVS;
+ignored_file_patterns=*.o;*.obj;*.a;*.lib;*.so;*.dll;*.lo;*.la;*.class;*.jar;*.pyc;*.mo;*.gmo;
+generate_tag_prefs=0
+show_empty_dirs=true
+external_dirs=

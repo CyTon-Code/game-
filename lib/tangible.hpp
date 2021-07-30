@@ -58,9 +58,6 @@ class Tangible : public Object
         Coordinates coordinates;
         Exp exp; // EXP
         Xp xp; // XP
-
-
 };
 
 #endif // GAME_OBJECT_TANGIBLE
-

@@ -27,11 +27,11 @@
 #ifndef GAME_OBJECT_EXP
 #define GAME_OBJECT_EXP
 
-#include "./object.hpp"
+#include "./element.hpp"
 
 #include "./test.hpp"
 
-class Exp : public Object
+class Exp : public Element
 {
     /* Example Exps: Exp ... */
 
@@ -39,10 +39,7 @@ class Exp : public Object
 
         Exp()
         {
-            // if Exp not found then add:
-                this->add_my_type("Exp");
-
-            test::created("Exp");
+           test::created("Exp");
         }
 
         Exp(const long int &_exp)
@@ -63,4 +60,3 @@ class Exp : public Object
 };
 
 #endif // GAME_OBJECT_EXP
-
