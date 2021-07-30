@@ -27,13 +27,9 @@
 #ifndef GAME_ELEMENT
 #define GAME_ELEMENT
 
-
 #include "tools.hpp"
 
 #include "./test.hpp"
-
-// debug and test:
-using std::cout, std::endl;
 
 class Element
 {

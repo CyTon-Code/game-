@@ -61,3 +61,4 @@ class Tangible : public Object
 };
 
 #endif // GAME_OBJECT_TANGIBLE
+

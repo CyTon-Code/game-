@@ -30,6 +30,8 @@
 
 #include "./tangible.hpp"
 
+#include "./test.hpp"
+
 class Essence : public Tangible
 {
     /* Example Essences: Skeleton Zombie Normal ... */
@@ -40,12 +42,12 @@ class Essence : public Tangible
         {
             this->add_my_type("Essence");
 
-            cout << "Essence was created" << endl;
+            test::created("Essence");
         }
 
         ~Essence()
         {
-            cout << "Essence was killed" << endl;
+            test::killed("Essence");
         }
 
     private:
