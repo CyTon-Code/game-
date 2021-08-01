@@ -3,4 +3,5 @@ game-
 readme.sh
 README.html
 *.gch
+cache/bin/
 

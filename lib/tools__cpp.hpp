@@ -1,9 +1,10 @@
 /*
- * File: tools.hpp
- * Autor: Dal Bo Yob
+ * File: tools__cpp.hpp
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,16 +25,14 @@
  */
 
 
-#ifndef GAME_TOOLS
-#define GAME_TOOLS
+#ifndef GAME_TOOLS__CPP
+#define GAME_TOOLS__CPP
 
-// find example
-// #include <algorithm>    // std::find
 #include <iostream>     // std::cout
 #include <vector>       // std::vector
 #include <string>       // std::string
 
-namespace tools
+namespace tools_cpp
 {
     // echo-print-write this vector in cout
     void echo(const std::vector<std::string> array)
@@ -56,49 +55,37 @@ namespace tools
     bool find(const std::vector<std::string> &array, std::string name)
     {
         for (auto i: array)
+        {
             if (i == name)
+            {
                 return true;
-        return false;
+            }
+            return false;
+        }
     }
 
 
     // push (back) if value not found in array
     void add(std::vector<std::string> &array, std::string value)
     {
-        if (not tools::find(array, value))
+        if (not tools_cpp::find(array, value))
+        {
             array.push_back(value);
+        }
+
+        else
+        {
+            std::cerr << "I can't pushed! Vector have this value!" << std::endl;
+        }
     }
 
 
     // push (back) in vector
     void append(std::vector<std::string> &array, std::string value)
     {
-        array.push_back(value);
+    array.push_back(value);
     }
-
-    // save object in file
-    template <class type>
-    void save(type &object)
-    {
-        /*
-            file={object.name}.game
-            touch $file // creat file
-            save(object, $file)
-        */
-    }
-
-
-    // load object from file
-
-
-    // remove
-
-
-    // get
-
-
-    // set
 };
 
-#endif // GAME_TOOLS
+#endif // GAME_TOOLS__CPP
 

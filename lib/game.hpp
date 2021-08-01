@@ -1,9 +1,10 @@
 /*
  * File: game.hpp
- * Autor: Dal Bo Yob
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,7 +30,7 @@
 #include "./cell.hpp"
 #include "./container.hpp"
 #include "./essence.hpp"
-#include "./tools.hpp"
+#include "./tools__cpp.hpp"
 
 // #include "./inventory.hpp"
 #include "./man.hpp"
@@ -42,7 +43,7 @@
 
 
 #include "objects.hpp" // Objects
-#include "tools.hpp" //
+#include "tools__cpp.hpp" //
 #include "./map.hpp" // Map
 
 #ifndef GAME

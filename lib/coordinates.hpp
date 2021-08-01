@@ -1,9 +1,10 @@
 /*
  * File: coordinates.hpp
- * Autor: Dal Bo Yob
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,8 +25,8 @@
  */
 
 
-#ifndef GAME_OBJECT_COORDINATES
-#define GAME_OBJECT_COORDINATES
+#ifndef GAME_ELEMENT_COORDINATES
+#define GAME_ELEMENT_COORDINATES
 
 #include "./element.hpp"
 
@@ -61,5 +62,5 @@ class Coordinates : public Element
         long double x = 0, y = 0, z = 0; // coordinates
 };
 
-#endif // GAME_OBJECT_COORDINATES
+#endif // GAME_ELEMENT_COORDINATES
 

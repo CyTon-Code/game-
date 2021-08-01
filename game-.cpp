@@ -1,9 +1,10 @@
 /*
  * File: game-.cpp
- * Autor: Dal Bo Yob
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,15 +29,29 @@
 
 int main()
 {
-    // Tangible();
-    // Coordinates();
-    // Exp();
-    // Xp();
+    system("echo   Welcome to the game!"); // goto add mesages
+    // Container();
+    Block();
+    Cell();
+    Essence();
+    // Functions();
+    Game();
+    Man();
+    Mouse();
+    NotTangible();
+    Object();
+    Slot();
+    Tangible();
+
+    Tangible();
+    Coordinates();
+    Exp();
+    Xp();
     Slot slot = Slot();
     slot.add_my_type("Slot");
-    tools::print(slot.get_my_type());
-    cout << tools::find(slot.get_my_type(), "Object") << endl;
-    cout << tools::find(slot.get_my_type(), "bject") << endl;
+    tools_cpp::print(slot.get_my_type());
+    cout << tools_cpp::find(slot.get_my_type(), "Object") << endl;
+    cout << tools_cpp::find(slot.get_my_type(), "bject") << endl;
 
     // Slot();
 

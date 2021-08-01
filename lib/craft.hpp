@@ -1,10 +1,12 @@
 /*
- * File: man.hpp
+ * File: cfart.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
  *
  * Copyright 2021 DBY Company <dal@bo.yob>
+ *
+ * Copyright 2021 Game Code <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,33 +27,31 @@
  */
 
 
-#ifndef GAME_OBJECT_ESSENCE_MAN
-#define GAME_OBJECT_ESSENCE_MAN
+#ifndef GAME_ELEMENT_CFART
+#define GAME_ELEMENT_COORDINATES
 
-#include "./essence.hpp"
+#include "./element.hpp"
 
-class Man : public Essence
+#include "./test.hpp"
+
+class Cfart : public Element
 {
-    /* Example Mans: Elf Gnom Druid Man ... */
+    /* Example Cfarts: Cfart ... */
 
     public:
 
-        Man()
+        Cfart()
         {
-            this->add_my_type("Man");
-
-            // this->add slots for objects of Essence-Man (head, body, foot)
-
-            cout << "Man created" << endl;
+            test::created("Cfart");
         }
 
-        ~Man()
+        ~Cfart()
         {
-            cout << "Man killed" << endl;
+            test::killed("Cfart");
         }
 
     private:
 };
 
-#endif // GAME_OBJECT_ESSENCE_MAN
+#endif // GAME_ELEMENT_COORDINATES
 

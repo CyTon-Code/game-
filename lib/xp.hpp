@@ -1,9 +1,10 @@
 /*
  * File: xp.hpp
- * Autor: Dal Bo Yob
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,8 +25,8 @@
  */
 
 
-#ifndef GAME_OBJECT_XP
-#define GAME_OBJECT_XP
+#ifndef GAME_ELEMENT_XP
+#define GAME_ELEMENT_XP
 
 #include "./element.hpp"
 
@@ -59,4 +60,4 @@ class Xp : public Element
         long double xp = 1; // XP
 };
 
-#endif // GAME_OBJECT_XP
+#endif // GAME_ELEMENT_XP

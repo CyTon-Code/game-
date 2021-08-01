@@ -1,9 +1,10 @@
 /*
  * File: exp.hpp
- * Autor: Dal Bo Yob
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,8 +25,8 @@
  */
 
 
-#ifndef GAME_OBJECT_EXP
-#define GAME_OBJECT_EXP
+#ifndef GAME_ELEMENT_EXP
+#define GAME_ELEMENT_EXP
 
 #include "./element.hpp"
 
@@ -59,5 +60,5 @@ class Exp : public Element
         long int exp = 1; // EXP
 };
 
-#endif // GAME_OBJECT_EXP
+#endif // GAME_ELEMENT_EXP
 

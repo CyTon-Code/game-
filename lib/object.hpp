@@ -1,9 +1,10 @@
 /*
  * File: object.hpp
- * Autor: Dal Bo Yob
  * Language: Cpp
+ * Author: Dal Bo Yob
+ * We: DBY Company
  *
- * Copyright 2021 Game Code <dal@bo.yob>
+ * Copyright 2021 DBY Company <dal@bo.yob>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,7 +29,7 @@
 #define GAME_OBJECT
 
 
-#include "tools.hpp"
+#include "tools__cpp.hpp"
 
 #include "./test.hpp"
 
@@ -66,22 +67,22 @@ class Object
 
         void add_my_type(std::string value)
         {
-            tools::add(this->my_types, value);
+            tools_cpp::add(this->my_types, value);
         }
 
         void add_type_friend(std::string value)
         {
-            tools::add(this->types_of_friends, value);
+            tools_cpp::add(this->types_of_friends, value);
         }
 
         void add_type_ignore(std::string value)
         {
-            tools::add(this->types_ignore, value);
+            tools_cpp::add(this->types_ignore, value);
         }
 
         void add_my_res(std::string value)
         {
-            tools::add(this->my_res, value);
+            tools_cpp::add(this->my_res, value);
         }
 
 

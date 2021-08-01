@@ -1,5 +1,5 @@
 /*
- * File: man.hpp
+ * File: tools_object.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -25,33 +25,34 @@
  */
 
 
-#ifndef GAME_OBJECT_ESSENCE_MAN
-#define GAME_OBJECT_ESSENCE_MAN
+#ifndef GAME_TOOLS__OBJECT
+#define GAME_TOOLS__OBJECT
 
-#include "./essence.hpp"
-
-class Man : public Essence
+namespace tools_object
 {
-    /* Example Mans: Elf Gnom Druid Man ... */
+    // save object in file
+    template <class type>
+    void save(type &object)
+    {
+        /*
+            file={object.name}.hpp
+            touch $file // creat file
+            save(object, $file)
+        */
+    }
 
-    public:
 
-        Man()
-        {
-            this->add_my_type("Man");
+    // load object from file
 
-            // this->add slots for objects of Essence-Man (head, body, foot)
 
-            cout << "Man created" << endl;
-        }
+    // remove
 
-        ~Man()
-        {
-            cout << "Man killed" << endl;
-        }
 
-    private:
+    // get
+
+
+    // set
 };
 
-#endif // GAME_OBJECT_ESSENCE_MAN
+#endif // GAME_TOOLS__OBJECT
 
