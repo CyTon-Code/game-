@@ -1,4 +1,4 @@
-history = "~/game-_history"
+history = "~/>__history"
 cmds = ""
 while True:
     cmd = input(">_ ").split()
@@ -8,7 +8,7 @@ while True:
         pass
 
 
-# I need append this commands in end file ~/game-_history:
+# I need append this commands in end file ~/>__history:
 with open(history, "r") as f:
 	file = f.read()
 with open(history, "w") as f:
