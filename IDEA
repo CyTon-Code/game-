@@ -1,9 +1,23 @@
 interpreter:
-add object__TYPE
-del
-edt
+// add object__TYPE // touch file - new
+add Man Man_1
+
+// set object__TYPE // sed file - edit
+
+//del oblect__TYPE // rm file - remove
+del Man_1 
+
 ...
 
 exit
 
+===================================================================================================
+cmds = '''add Man Man_1
+
+del Man_1
+'''
+
+// I need append this commands in end file ~/game-_history
+with open("~/game-_history", "write in end - append") as f:
+	f.append(cmds)
 
