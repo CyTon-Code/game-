@@ -1,3 +1,22 @@
+history = "~/game-_history"
+cmds = ""
+while True:
+    cmd = input(">_ ").split()
+    if "exit" == cmd[0]:
+        break
+    if "add" == cmd[0]:
+        pass
+
+
+# I need append this commands in end file ~/game-_history:
+with open(history, "r") as f:
+	file = f.read()
+with open(history, "w") as f:
+	f.write(file+cmds)
+
+
+
+"""
 interpreter:
 // add object__TYPE // touch file - new
 >_ add Man Man_1
@@ -26,3 +45,5 @@ with open("~/>__history", "r") as f:
 
 with open("~/>__history", "w") as f:
 	f.write(file+cmds)
+"""
+
