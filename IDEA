@@ -1,23 +1,26 @@
 interpreter:
 // add object__TYPE // touch file - new
-add Man Man_1
+>_ add Man Man_1
 
 // set object__TYPE // sed file - edit
+>_ set Man Xp 10
 
 //del oblect__TYPE // rm file - remove
-del Man_1 
+>_ del Man_1 
 
 ...
 
 exit
 
-===================================================================================================
+====================================================================================================
 cmds = '''add Man Man_1
-
+set Man Xp 10
 del Man_1
 '''
 
-// I need append this commands in end file ~/game-_history
-with open("~/game-_history", "write in end - append") as f:
-	f.append(cmds)
+# TODO: NOT WORK:
 
+# I need append this commands in end file ~/>__history
+file_history = open("~/>__history", "write in end - append")
+file_history.append(cmds)
+file_history.close()
