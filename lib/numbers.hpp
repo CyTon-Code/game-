@@ -1,5 +1,5 @@
 /*
- * File: essence.hpp
+ * File: numbers.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -25,34 +25,36 @@
  */
 
 
-#ifndef GAME_OBJECT_TANGIBLE_ESSENCE
-#define GAME_OBJECT_TANGIBLE_ESSENCE
+#ifndef GAME_OBJECT_NOT__TANGIBLE_NUMBERS
+#define GAME_OBJECT_NOT__TANGIBLE_NUMBERS
 
+#include "./not__tangible.hpp"
 
-#include "./tangible.hpp"
-
-#include "./test.hpp"
-
-class Essence : public Tangible
+class Numbers: public NotTangible
 {
-  /* Example Essences: Skeleton Zombie Normal ... */
+    /* Example Numberses: Slot ... */
 
-  public:
+    public:
 
-    Essence()
+      Numbers()
     {
-      this->add_my_type("Essence");
+        this->add_my_type("Stack");
+        this->add_my_type("Numbers");
 
-      test::created("Essence");
+        cout << "Numbers created" << endl;
     }
 
-    ~Essence()
-    {
-      test::killed("Essence");
-    }
 
-  private:
+        ~Numbers()
+        {
+            cout << "Numbers killed" << endl;
+        }
+
+    private:
+
+        //  список всех обьектов стака:
+        std::vector<std::string> links_on_objects;
 };
 
-#endif // GAME_OBJECT_TANGIBLE_ESSENCE
+#endif /* GAME_OBJECT_NOT__TANGIBLE_NUMBERS */
 

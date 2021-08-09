@@ -34,57 +34,65 @@
 
 namespace tools_cpp
 {
-    // echo-print-write this vector in cout
-    void echo(const std::vector<std::string> array)
+  // echo-print-write this vector in cout
+  void echo(const std::vector<std::string> array)
+  {
+    for (auto i: array)
     {
-        for (auto i: array)
-            std::cout << i << " ";
-        std::cout << std::endl;
+      std::cout << i << " ";
     }
 
-    // echo-print-write this vector in cout
-    void print(const std::vector<std::string> array)
+    std::cout << std::endl;
+  }
+
+  // echo-print-write this vector in cout
+  void print(const std::vector<std::string> array)
+  {
+    std::cout << "[";
+
+    for (auto i: array)
     {
-        std::cout << "[";
-        for (auto i: array)
-            std::cout << i << ", ";
-        std::cout << "]" << std::endl;
+      std::cout << i << ", ";
     }
 
-    // find in vector
-    bool find(const std::vector<std::string> &array, std::string name)
+    std::cout << "]" << std::endl;
+  }
+
+  // find in vector
+  bool find(const std::vector<std::string> &array, std::string name)
+  {
+    for (auto i: array)
     {
-        for (auto i: array)
-        {
-            if (i == name)
-            {
-                return true;
-            }
-            return false;
-        }
+      if (i == name)
+      {
+        return true;
+      }
+
+      return false;
+    }
+  }
+
+
+  // push (back) if value not found in array
+  void add(std::vector<std::string> &array, std::string value)
+  {
+    if (not tools_cpp::find(array, value))
+    {
+      array.push_back(value);
     }
 
-
-    // push (back) if value not found in array
-    void add(std::vector<std::string> &array, std::string value)
+    else
     {
-        if (not tools_cpp::find(array, value))
-        {
-            array.push_back(value);
-        }
-
-        else
-        {
-            std::cerr << "I can't pushed! Vector have this value!" << std::endl;
-        }
+      std::cerr << "I can't pushed! Vector have this value!" << std::endl;
     }
+  }
 
 
-    // push (back) in vector
-    void append(std::vector<std::string> &array, std::string value)
-    {
+  // push (back) in vector
+  void append(std::vector<std::string> &array, std::string value)
+  {
     array.push_back(value);
-    }
+  }
 };
 
 #endif // GAME_TOOLS__CPP

@@ -28,7 +28,7 @@
 
 
 #ifndef GAME_ELEMENT_CFART
-#define GAME_ELEMENT_COORDINATES
+#define GAME_ELEMENT_CFART
 
 #include "./element.hpp"
 
@@ -53,5 +53,5 @@ class Cfart : public Element
     private:
 };
 
-#endif // GAME_ELEMENT_COORDINATES
+#endif // GAME_ELEMENT_CFART
 

@@ -1,5 +1,5 @@
 /*
- * File: essence.hpp
+ * File: count.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -25,34 +25,39 @@
  */
 
 
-#ifndef GAME_OBJECT_TANGIBLE_ESSENCE
-#define GAME_OBJECT_TANGIBLE_ESSENCE
+#ifndef GAME_OBJECT_NOT__TANGIBLE_COUNT
+#define GAME_OBJECT_NOT__TANGIBLE_COUNT
 
+#include "./not__tangible.hpp"
 
-#include "./tangible.hpp"
-
-#include "./test.hpp"
-
-class Essence : public Tangible
+class Count: public NotTangible
 {
-  /* Example Essences: Skeleton Zombie Normal ... */
+    /* Example Counts: Count ... */
 
-  public:
+    public:
 
-    Essence()
+      Count()
     {
-      this->add_my_type("Essence");
+        this->add_my_type("Stack");
+        this->add_my_type("Count");
 
-      test::created("Essence");
+        cout << "Count created" << endl;
     }
 
-    ~Essence()
-    {
-      test::killed("Essence");
-    }
 
-  private:
+        ~Count()
+        {
+            cout << "Count killed" << endl;
+        }
+
+    private:
+
+        // ссылка на обьект которого в ячейке более 1:
+        std::string link_on_object;
+
+        // количество копий этого обьекта:
+        long int count;
 };
 
-#endif // GAME_OBJECT_TANGIBLE_ESSENCE
+#endif /* GAME_OBJECT_NOT__TANGIBLE_COUNT */
 
