@@ -27,14 +27,10 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=2
-FILE_NAME_0=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Fgame-.cpp;0;4
-FILE_NAME_1=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Flib%2Fslot.hpp;0;4
-FILE_NAME_2=1413;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Flib%2Ftangible.hpp;0;4
-FILE_NAME_3=0;C++;0;EUTF-8;0;1;0;%2Fhome%2Fgnu%2Fgit%2Fgame-%2Flib%2Ftest.hpp;0;4
+current_page=-1
 
 [VTE]
-last_dir=/home/gnu/git/game-/lib
+last_dir=/home/cytoncode/GIT/game-/lib
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;

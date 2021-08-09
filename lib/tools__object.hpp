@@ -34,11 +34,11 @@ namespace tools_object
     template <class type>
     void save(type &object)
     {
-        /*
-            file={object.name}.hpp
-            touch $file // creat file
-            save(object, $file)
-        */
+        std::string file = object.get_name();
+
+        system(std::string("echo > " + file).c_str());
+
+        object.save();
     }
 
 
