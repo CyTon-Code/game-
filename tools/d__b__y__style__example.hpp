@@ -1,5 +1,7 @@
-/*
- * File: DBY__style__example
+
+/* INFO
+ *
+ * File: d__b__y__style__example.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -24,29 +26,32 @@
  *
  */
 
+/* THOUGHT
+ *
+ *
+ */
 
-
-/* WARN
+/* WARNING
  * 
- * Adress on file: ./tools/d__b__y__style__example.hpp
+ * File address: ./tools/d__b__y__style__example.hpp
  * 
  * or
  * 
  * Inheritance in game: DBYStyleExample is Tools
  * 
- * equale:
+ * equal:
  * 
  * define: TOOLS_D__B__Y__STYLE__EXAMPLE
  * namespace, var, fun: d__b__y__style__example
  * class: DBYStyleExample
  * 
  */
+
 #ifndef TOOLS_D__B__Y__STYLE__EXAMPLE
 #define TOOLS_D__B__Y__STYLE__EXAMPLE
 
 #include /lib/ <library>     // commands, that, I, use
 #include ./    "library"     // commands, that, I, use
-
 
 /* this function makes it ... */
 return_type
@@ -56,21 +61,20 @@ name_function (type_element name_element, ...)
 }
 
 ...
-/* */
+/* this namespace stores ... */
 namespace name_namespace
 {
   ...
-
 };
 ...
 
 ...
-/* Question? */
+/* it's true?: */
 if (true)
   {
     ...
   }
-else
+else /* false */
   {
     ...
   }
@@ -78,62 +82,20 @@ else
 
 ...
 /* */
-for (...)
+for-try-if-while... (...)
   {
     ...
   }
 ...
 
-
-/* echo-print-write this vector in cout */
-void
-print (const std::vector<std::string> array)
-{
-  std::cout << "[";
-  for (auto i: array)
-    {
-      std::cout << i << ", ";
-    }
-  std::cout << "]" << std::endl;
-}
-
-/* find in vector */
-bool
-find (const std::vector<std::string> &array, std::string name)
-{
-  for (auto i: array)
-    {
-      if (i == name)
-        {
-          return true;
-        }
-    }
-  return false;
-}
-
-
-/* push (back) if value not found in array */
-void
-add (std::vector<std::string> &array, std::string value)
-{
-  if (not tools_cpp::find (array, value))
-    {
-      array.push_back (value);
-    }
-  else
-    {
-      std::cerr << "I can't pushed! Vector have this value!" << std::endl;
-    }
-}
-
-
-/* push (back) in vector */
-void
-append (std::vector<std::string> &array, std::string value)
-{
-  array.push_back (value);
-}
-
+...
+/* */
+do
+  {
+    ...
+  }
+while () /* */
+...
 
 #endif /* TOOLS_D__B__Y__STYLE__EXAMPLE */
 
