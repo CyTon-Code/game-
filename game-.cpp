@@ -29,8 +29,7 @@
 
 int main()
 {
-    system("echo   Welcome to the game!"); // goto add mesages
-    // Container();
+    system("echo   Welcome to the 'game-?'!"); // goto add mesages
 
     Block();
     Cell();
@@ -41,7 +40,6 @@ int main()
     Element();
     Essence();
     Exp();
-    // Functions();
     Game();
     Man();
     Map();
@@ -59,7 +57,6 @@ int main()
     cout << tools_cpp::find(slot.get_my_type(), "Object") << endl;
     cout << tools_cpp::find(slot.get_my_type(), "bject") << endl;
 
-    // Slot();
 
     // 1. terminal_interface {select planet, u/mount galaxy, next, exit} - run bash
     // 2. load configs, data - create map, objects... - run cpp game --planet your_planet

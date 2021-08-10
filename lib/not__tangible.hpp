@@ -25,6 +25,19 @@
  */
 
 
+// THOUGHT:
+// This class is not used or needed ...
+// Should I delete it?
+
+
+// REASON DROP:
+// I add this class to have a NotTangible tag in my_type. But is this
+// tag worth an entire class? I have a Tangible tag in my_type, which
+// is the opposite of NotTangible. Using the 'not' + Tangible tag, you
+// can discard the NotTangible tag.
+
+
+
 #ifndef GAME_OBJECT_NOT__TANGIBLE
 #define GAME_OBJECT_NOT__TANGIBLE
 

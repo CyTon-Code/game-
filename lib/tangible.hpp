@@ -56,7 +56,7 @@ class Tangible : public Object
 
     private:
 
-        Coordinates coordinates;
+        Coordinates coordinates; // XYZ
         Exp exp; // EXP
         Xp xp; // XP
 };
