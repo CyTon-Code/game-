@@ -1,5 +1,5 @@
 /*
- * File: cpp.hpp
+ * File: tools__cpp.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -25,17 +25,19 @@
  */
 
 
-#ifndef TOOLS_CPP
+#ifndef TOOLS_TOOLS__CPP
 #define TOOLS_CPP
 
 #include <iostream>     // std::cout
 #include <vector>       // std::vector
 #include <string>       // std::string
 
+/* */
 namespace tools_cpp
 {
-  // echo-print-write this vector in cout
-  void echo (const std::vector<std::string> array)
+  /* echo-print-write this vector in cout */
+  void
+  echo (const std::vector<std::string> array)
   {
     for (auto i: array)
       {
@@ -44,8 +46,9 @@ namespace tools_cpp
     std::cout << std::endl;
   }
 
-  // echo-print-write this vector in cout
-  void print (const std::vector<std::string> array)
+  /* echo-print-write this vector in cout */
+  void
+  print (const std::vector<std::string> array)
   {
     std::cout << "[";
     for (auto i: array)
@@ -55,8 +58,9 @@ namespace tools_cpp
     std::cout << "]" << std::endl;
   }
 
-  // find in vector
-  bool find (const std::vector<std::string> &array, std::string name)
+  /* find in vector */
+  bool
+  find (const std::vector<std::string> &array, std::string name)
   {
     for (auto i: array)
       {
@@ -68,9 +72,10 @@ namespace tools_cpp
     return false;
   }
 
-
-  // push (back) if value not found in array
-  void add (std::vector<std::string> &array, std::string value)
+  
+  /* push (back) if value not found in array */
+  void
+  add (std::vector<std::string> &array, std::string value)
   {
     if (not tools_cpp::find (array, value))
       {
@@ -83,12 +88,13 @@ namespace tools_cpp
   }
 
 
-  // push (back) in vector
-  void append (std::vector<std::string> &array, std::string value)
+  /* push (back) in vector */
+  void
+  append (std::vector<std::string> &array, std::string value)
   {
     array.push_back (value);
   }
 };
 
-#endif // TOOLS_CPP
+#endif /* TOOLS_CPP */
 
