@@ -30,27 +30,26 @@
 #ifndef GAME_ELEMENT_CRAFT
 #define GAME_ELEMENT_CRAFT
 
-#include "./element.hpp"
-
-#include "./tools__log.hpp"
+#include "element.hpp"
+#include "../tools/log.hpp"
 
 class Craft : public Element
 {
-    /* Example Crafts: Craft CraftArm ... */
+  /* Example Crafts: Craft CraftArm ... */
 
-    public:
+  public:
 
-        Craft()
-        {
-            tools__log::created("Craft");
-        }
+    Craft()
+    {
+      tools__log::created("Craft");
+    }
 
-        ~Craft()
-        {
-            tools__log::killed("Craft");
-        }
+    ~Craft()
+    {
+      tools__log::killed("Craft");
+    }
 
-    private:
+  private:
 };
 
 #endif // GAME_ELEMENT_CRAFT

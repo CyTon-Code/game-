@@ -28,17 +28,18 @@
 #ifndef GAME_OBJECT_NOT__TANGIBLE_SLOT
 #define GAME_OBJECT_NOT__TANGIBLE_SLOT
 
-#include "not__tangible.hpp"
+#include "not__tangible.hpp" // for inheritance
 
-#include "tools__log.hpp"
+#include "../tools/log.hpp" // for log
 
-
+/* */
 class Slot: public NotTangible
 {
   /* Example Slots: Slot ... */
 
   public:
 
+    /* */
     Slot()
     {
       this->add_my_type("Container");
@@ -48,6 +49,7 @@ class Slot: public NotTangible
     }
 
 
+    /* */
     ~Slot()
     {
       this->clearTypesOfChanges();
@@ -55,12 +57,14 @@ class Slot: public NotTangible
       tools__log::killed("Slot");
     }
 
+    /* */
     void clearSlot()
     {
       this->clearObject();
       this->clearTypesOfChanges();
     }
 
+    /* */
     void clearTypesOfChanges()
     {
       this->types_of_changes.clear();
@@ -70,7 +74,7 @@ class Slot: public NotTangible
 
   private:
 
-    // типы влияющие на статистику объекта в котором нахожусь:
+    /* типы влияющие на статистику объекта в котором нахожусь: */
     std::vector<std::string> types_of_changes;
 };
 

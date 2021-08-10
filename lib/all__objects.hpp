@@ -1,6 +1,5 @@
-/* INFO
- *
- * File: mouse.hpp
+/*
+ * File: objects.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -25,50 +24,29 @@
  *
  */
 
-/* THOUGHT
- *
- *
- */
 
+#ifndef GAME_ALL_OBJECTS
+#define GAME_ALL_OBJECTS
 
-#ifndef GAME_OBJECT_TANGIBLE
-#define GAME_OBJECT_TANGIBLE
-
-/* for inheritance: */
-#include "object.hpp"
-
-/* for using: */
+#include "block.hpp"
+#include "cell.hpp"
+#include "container.hpp"
 #include "coordinates.hpp"
+#include "count.hpp"
+#include "craft.hpp"
+#include "element.hpp"
+#include "essence.hpp"
 #include "exp.hpp"
-#include "xp.hpp"
-
-/* for log: */
+#include "man.hpp"
+#include "map.hpp"
+#include "mouse.hpp"
+#include "not__tangible.hpp"
+#include "object.hpp"
+#include "slot.hpp"
+#include "tangible.hpp"
+#include "../tools/cpp.hpp"
 #include "../tools/log.hpp"
+#include "../tools/object.hpp"
 
-class Tangible : public Object
-{
-  /* Example Tangibles: Essence Block Map Man ... */
-
-  public:
-
-    Tangible()
-    {
-      this->add_my_type("Tangible");
-
-      tools__log::created("Tangible");
-    }
-
-    ~Tangible()
-    {
-      tools__log::killed("Tangible");
-    }
-
-  private:
-
-    Coordinates coordinates; // XYZ
-    Exp exp; // EXP
-    Xp xp; // XP
-};
-
-#endif /* GAME_OBJECT_TANGIBLE */
+#endif // GAME_ALL_OBJECTS
 

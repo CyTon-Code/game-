@@ -25,39 +25,51 @@
  */
 
 
+/* THOUGHT:
+ *
+ *
+ */
+
+
 #ifndef GAME_ELEMENT_XP
 #define GAME_ELEMENT_XP
 
-#include "./element.hpp"
+#include "element.hpp" // for inheritance
 
-#include "./tools__log.hpp"
+#include "../tools/log.hpp" // for log
 
+/* */
 class Xp : public Element
 {
     /* Example Xps: Xp ... */
 
     public:
 
-        Xp()
-        {
-            tools__log::created("Xp");
-        }
+      /* */
+      Xp()
+      {
+        tools__log::created("Xp");
+      }
 
-        Xp(const long int &_xp)
-        {
-            this->xp = _xp;
+      /* */
+      Xp(const long int &_xp)
+      {
+        this->xp = _xp;
 
-            tools__log::copied("Xp");
-        }
+        tools__log::copied("Xp");
+      }
 
-        ~Xp()
-        {
-            tools__log::killed("Xp");
-        }
+      /* */
+      ~Xp()
+      {
+        tools__log::killed("Xp");
+      }
 
     private:
 
-        long double xp = 1; // XP
+      /* */
+      long double xp = 1; // XP
 };
 
-#endif // GAME_ELEMENT_XP
+#endif /* GAME_ELEMENT_XP */
+

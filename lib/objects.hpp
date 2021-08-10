@@ -25,37 +25,40 @@
  */
 
 
+// WARN:
+// THIS FILE WILL BE CREATED AUTOMATICALLY
+
+
+#include "all__objects.hpp"
+
 #ifndef GAME_OBJECTS
 #define GAME_OBJECTS
 
-#include "cell.hpp"
-#include "slot.hpp"
-
 class Objects
 {
-    /* Objects: store all objects in game */
+  /* Objects: store all objects in game */
 
-    public:
+  public:
 
-        Objects()
-        {
-            cout << "Objects created" << endl;
-        }
+    Objects()
+    {
+      cout << "Objects created" << endl;
+    }
 
-        ~Objects()
-        {
-            cout << "Objects killed" << endl << endl;
-        }
+    ~Objects()
+    {
+      cout << "Objects killed" << endl << endl;
+    }
 
-    private:
+  private:
 
-        // Objects all_objects;
-        // all objects:
+    // Objects all_objects;
+    // all objects:
 
-        std::vector<Cell> all_cells;
-        std::vector<Slot> all_slots;
+    std::vector<Cell> all_cells; // for auto i:COUNT_CELL: .back_push(Cell())
+    std::vector<Slot> all_slots; // for auto i:COUNT_SLOT: .back_push(Slot())
 
-        // ... all types ????
+    // ... all types ????
 };
 
 #endif // GAME_OBJECTS
