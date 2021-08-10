@@ -1,6 +1,8 @@
-#define TAB 4
+#define CODE__STYLE GNU + DBY
 
-#define SEP_LINE 1
+#define TAB 2
+#define SEP__LINE 1
+#define WARN__SEP__LINE 2
 
 #if after IF more ONE_LINE:
 # define {}  "using"
