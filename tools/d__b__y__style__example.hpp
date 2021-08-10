@@ -24,40 +24,62 @@
  *
  *
  */
+...
 
+...
 /* THOUGHT
  *
  *
  */
+...
 
+...
 /* WARNING
- * 
+ *
  * File address: ./tools/d__b__y__style__example.hpp
- * 
+ *
  * or
- * 
+ *
  * Inheritance in game: DBYStyleExample is Tools
- * 
+ *
  * equal:
- * 
+ *
  * define: TOOLS_D__B__Y__STYLE__EXAMPLE
  * namespace, var, fun: d__b__y__style__example
  * class: DBYStyleExample
- * 
+ *
+ *
  */
+...
 
+...
+/* */
 #ifndef TOOLS_D__B__Y__STYLE__EXAMPLE
 #define TOOLS_D__B__Y__STYLE__EXAMPLE
 
-#include /lib/ <library>     // commands, that, I, use
-#include ./    "library"     // commands, that, I, use
+...
 
+#endif /* TOOLS_D__B__Y__STYLE__EXAMPLE */
+...
+
+...
+/* reason use this: */
+#include *lib/ <library.hpp>     /* commands, that, I, use */
+...
+
+...
+/* reason use this: */
+#include ./    "library.hpp"     /* commands, that, I, use */
+...
+
+...
 /* this function makes it ... */
 return_type
 name_function (type_element name_element, ...)
 {
   ...
 }
+...
 
 ...
 /* this namespace stores ... */
@@ -68,12 +90,8 @@ namespace name_namespace
 ...
 
 ...
-/* it's true?: */
-if (true)
-  {
-    ...
-  }
-else /* false */
+/* */
+else
   {
     ...
   }
@@ -81,7 +99,7 @@ else /* false */
 
 ...
 /* */
-for-try-if-while... (...)
+for / try / if / else if / while / ... (...)
   {
     ...
   }
@@ -93,8 +111,51 @@ do
   {
     ...
   }
-while () /* */
+while (...) /* */
 ...
 
-#endif /* TOOLS_D__B__Y__STYLE__EXAMPLE */
+...
+class MyClass : public MyParentClass
+{
+  /* Example MyClasses: MyClass ... */
+
+  public:
+
+    ...
+
+  private:
+
+    ...
+};
+...
+
+...
+/* after creation: */
+MyClass()
+{
+  ...
+
+  tools__log::created("MyClass");
+}
+...
+
+...
+/* before removal: */
+~MyClass()
+{
+  ...
+
+  tools__log::killed("MyClass");
+}
+...
+
+...
+/* copying: */
+~MyClass(...)
+{
+  ...
+
+  tools__log::copied("MyClass");
+}
+...
 
