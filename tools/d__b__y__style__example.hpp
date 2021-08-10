@@ -1,4 +1,3 @@
-
 /* INFO
  *
  * File: d__b__y__style__example.hpp
