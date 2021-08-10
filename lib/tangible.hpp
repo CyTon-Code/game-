@@ -37,13 +37,13 @@
 /* for inheritance: */
 #include "object.hpp"
 
+/* for log: */
+#include "../tools/log.hpp"
+
 /* for using: */
 #include "coordinates.hpp"
 #include "exp.hpp"
 #include "xp.hpp"
-
-/* for log: */
-#include "../tools/log.hpp"
 
 class Tangible : public Object
 {
@@ -51,6 +51,7 @@ class Tangible : public Object
 
   public:
 
+    /* */
     Tangible()
     {
       this->add_my_type("Tangible");
@@ -58,6 +59,7 @@ class Tangible : public Object
       tools__log::created("Tangible");
     }
 
+    /* */
     ~Tangible()
     {
       tools__log::killed("Tangible");
@@ -65,9 +67,14 @@ class Tangible : public Object
 
   private:
 
-    Coordinates coordinates; // XYZ
-    Exp exp; // EXP
-    Xp xp; // XP
+    /* XYZ: */
+    Coordinates coordinates;
+
+    /* EXP: */
+    Exp exp;
+
+    /* XP: */
+    Xp xp;
 };
 
 #endif /* GAME_OBJECT_TANGIBLE */
