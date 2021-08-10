@@ -30,49 +30,49 @@
 
 #include "tools__cpp.hpp"
 
-#include "./test.hpp"
+#include "tools__log.hpp"
 
 class Element
 {
-    /* Example Elements: Exp Xp Coordinates Object?? ... */
+  /* Example Elements: Exp Xp Coordinates Object?? ... */
 
-    public:
+  public:
 
-        Element()
-        {
-            std::cout << std::endl;
-            test::created("Element");
-        }
+  Element()
+  {
+    std::cout << std::endl;
+    tools__log::created("Element");
+  }
 
-        ~Element()
-        {
-            this->clearType();
+  ~Element()
+  {
+    this->clearType();
 
-            test::killed("Element");
-            std::cout << std::endl;
-        }
+    tools__log::killed("Element");
+    std::cout << std::endl;
+  }
 
-        void add_my_res(std::string value)
-        {
-            tools_cpp::add(this->my_res, value);
-        }
+  void add_my_res(std::string value)
+  {
+    tools_cpp::add(this->my_res, value);
+  }
 
-        void clearMyRes()
-        {
-            this->my_res.clear();
-            test::cleared("Element");
-        }
+  void clearMyRes()
+  {
+    this->my_res.clear();
+    tools__log::cleared("Element");
+  }
 
 
-        void clearType()
-        {
-            this->clearMyRes();
-        }
+  void clearType()
+  {
+    this->clearMyRes();
+  }
 
-    private:
+  private:
 
-        // ресурсы которые я в себе храню
-        std::vector<std::string> my_res;
+    // ресурсы которые я в себе храню
+    std::vector<std::string> my_res;
 };
 
 #endif // GAME_ELEMENT

@@ -28,9 +28,9 @@
 #ifndef GAME_ELEMENT_COORDINATES
 #define GAME_ELEMENT_COORDINATES
 
-#include "./element.hpp"
+#include "element.hpp"
 
-#include "./test.hpp"
+#include "tools__log.hpp"
 
 class Coordinates : public Element
 {
@@ -40,7 +40,7 @@ class Coordinates : public Element
 
         Coordinates()
         {
-            test::created("Coordinates");
+            tools__log::created("Coordinates");
         }
 
         Coordinates(const long double &_x, const long double &_y, const long double &_z)
@@ -49,12 +49,12 @@ class Coordinates : public Element
             this->y = _y;
             this->z = _z;
 
-            test::copied("Coordinates");
+            tools__log::copied("Coordinates");
         }
 
         ~Coordinates()
         {
-            test::killed("Coordinates");
+            tools__log::killed("Coordinates");
         }
 
     private:

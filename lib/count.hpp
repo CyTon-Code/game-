@@ -32,31 +32,31 @@
 
 class Count: public NotTangible
 {
-    /* Example Counts: Count ... */
+  /* Example Counts: Count ... */
 
-    public:
+  public:
 
-      Count()
+    Count()
     {
-        this->add_my_type("Stack");
-        this->add_my_type("Count");
+      this->add_my_type("Stack");
+      this->add_my_type("Count");
 
-        cout << "Count created" << endl;
+      cout << "Count created" << endl;
     }
 
 
-        ~Count()
-        {
-            cout << "Count killed" << endl;
-        }
+    ~Count()
+    {
+      cout << "Count killed" << endl;
+    }
 
-    private:
+  private:
 
-        // ссылка на обьект которого в ячейке более 1:
-        std::string link_on_object;
+    // ссылка на обьект которого в ячейке более 1:
+    std::string link_on_object;
 
-        // количество копий этого обьекта:
-        long int count;
+    // количество копий этого обьекта:
+    long int count;
 };
 
 #endif /* GAME_OBJECT_NOT__TANGIBLE_COUNT */

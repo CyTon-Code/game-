@@ -27,31 +27,31 @@
  */
 
 
-#ifndef GAME_ELEMENT_CFART
-#define GAME_ELEMENT_CFART
+#ifndef GAME_ELEMENT_CRAFT
+#define GAME_ELEMENT_CRAFT
 
 #include "./element.hpp"
 
-#include "./test.hpp"
+#include "./tools__log.hpp"
 
-class Cfart : public Element
+class Craft : public Element
 {
-    /* Example Cfarts: Cfart ... */
+    /* Example Crafts: Craft CraftArm ... */
 
     public:
 
-        Cfart()
+        Craft()
         {
-            test::created("Cfart");
+            tools__log::created("Craft");
         }
 
-        ~Cfart()
+        ~Craft()
         {
-            test::killed("Cfart");
+            tools__log::killed("Craft");
         }
 
     private:
 };
 
-#endif // GAME_ELEMENT_CFART
+#endif // GAME_ELEMENT_CRAFT
 

@@ -30,7 +30,7 @@ long_line_column=72
 current_page=-1
 
 [VTE]
-last_dir=/home/cytoncode/GIT/game-/lib
+last_dir=/home/cytoncode/GIT/game-
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;

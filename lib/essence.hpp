@@ -29,9 +29,9 @@
 #define GAME_OBJECT_TANGIBLE_ESSENCE
 
 
-#include "./tangible.hpp"
+#include "tangible.hpp"
 
-#include "./test.hpp"
+#include "tools__log.hpp"
 
 class Essence : public Tangible
 {
@@ -43,12 +43,12 @@ class Essence : public Tangible
     {
       this->add_my_type("Essence");
 
-      test::created("Essence");
+      tools__log::created("Essence");
     }
 
     ~Essence()
     {
-      test::killed("Essence");
+      tools__log::killed("Essence");
     }
 
   private:

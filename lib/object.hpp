@@ -30,114 +30,113 @@
 
 
 #include "tools__cpp.hpp"
-
-#include "./test.hpp"
+#include "tools__log.hpp"
 
 // debug and test:
 using std::cout, std::endl;
 
 class Object
 {
-    /* Example Objects: *these are all objects in the game* */
+  /* Example Objects: *these are all objects in the game* */
 
-    public:
+  public:
 
-        Object()
-        {
-            this->add_my_type("Object");
+    Object()
+    {
+      this->add_my_type("Object");
 
-            std::cout << std::endl;
-            test::created("Object");
-        }
+      std::cout << std::endl;
+      tools__log::created("Object");
+    }
 
-        ~Object()
-        {
-            this->clearObject();
+    ~Object()
+    {
+      this->clearObject();
 
-            test::killed("Object");
-            std::cout << std::endl;
-        }
-
-
-        std::vector<std::string> get_my_type()
-        {
-            return this->my_types;
-        }
+      tools__log::killed("Object");
+      std::cout << std::endl;
+    }
 
 
-        void add_my_type(std::string value)
-        {
-            tools_cpp::add(this->my_types, value);
-        }
-
-        void add_type_friend(std::string value)
-        {
-            tools_cpp::add(this->types_of_friends, value);
-        }
-
-        void add_type_ignore(std::string value)
-        {
-            tools_cpp::add(this->types_ignore, value);
-        }
-
-        void add_my_res(std::string value)
-        {
-            tools_cpp::add(this->my_res, value);
-        }
+    std::vector<std::string> get_my_type()
+    {
+      return this->my_types;
+    }
 
 
-        void clearMyRes()
-        {
-            this->my_res.clear();
+    void add_my_type(std::string value)
+    {
+      tools_cpp::add(this->my_types, value);
+    }
 
-            test::cleared("my res");
-        }
+    void add_type_friend(std::string value)
+    {
+      tools_cpp::add(this->types_of_friends, value);
+    }
 
-        void clearMyTypes()
-        {
-            this->my_types.clear();
+    void add_type_ignore(std::string value)
+    {
+      tools_cpp::add(this->types_ignore, value);
+    }
 
-            test::cleared("my types");
-        }
+    void add_my_res(std::string value)
+    {
+      tools_cpp::add(this->my_res, value);
+    }
 
-        void clearTypesignore()
-        {
-            this->types_ignore.clear();
 
-            test::cleared("types ignore");
-        }
+    void clearMyRes()
+    {
+      this->my_res.clear();
 
-        void clearTypesOfFriends()
-        {
-            this->types_of_friends.clear();
+      tools__log::cleared("my res");
+    }
 
-            test::cleared("types of friends");
-        }
+    void clearMyTypes()
+    {
+      this->my_types.clear();
 
-        void clearObject()
-        {
-            this->clearMyRes();
-            this->clearMyTypes();
-            this->clearTypesignore();
-            this->clearTypesOfFriends();
-        }
+      tools__log::cleared("my types");
+    }
 
-    private:
+    void clearTypesignore()
+    {
+      this->types_ignore.clear();
 
-        // имя файла - обьекта:
-        std::string name;
+      tools__log::cleared("types ignore");
+    }
 
-        // типы за которые меня принимают:
-        std::vector<std::string> my_types;
+    void clearTypesOfFriends()
+    {
+      this->types_of_friends.clear();
 
-        // типы которые я могу позволить хранить у себя в контейнерах:
-        std::vector<std::string> types_of_friends;
+      tools__log::cleared("types of friends");
+    }
 
-        // типы которые я не могу позволить хранить у себя в контейнерах: - я также не могу хранить те вещи которые не может родителский обьект - например сумку в сумке
-        std::vector<std::string> types_ignore;
+    void clearObject()
+    {
+      this->clearMyRes();
+      this->clearMyTypes();
+      this->clearTypesignore();
+      this->clearTypesOfFriends();
+    }
 
-        // ресурсы которые я в себе храню
-        std::vector<std::string> my_res;
+  private:
+
+    // имя файла - обьекта:
+    std::string name;
+
+    // типы за которые меня принимают:
+    std::vector<std::string> my_types;
+
+    // типы которые я могу позволить хранить у себя в контейнерах:
+    std::vector<std::string> types_of_friends;
+
+    // типы которые я не могу позволить хранить у себя в контейнерах: - я также не могу хранить те вещи которые не может родителский обьект - например сумку в сумке
+    std::vector<std::string> types_ignore;
+
+    // ресурсы которые я в себе храню
+    std::vector<std::string> my_res;
 };
 
 #endif // GAME_OBJECT

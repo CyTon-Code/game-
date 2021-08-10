@@ -34,7 +34,7 @@
 #include "./exp.hpp"
 #include "./xp.hpp"
 
-#include "./test.hpp"
+#include "./tools__log.hpp"
 
 class Tangible : public Object
 {
@@ -46,12 +46,12 @@ class Tangible : public Object
         {
             this->add_my_type("Tangible");
 
-            test::created("Tangible");
+            tools__log::created("Tangible");
         }
 
         ~Tangible()
         {
-            test::killed("Tangible");
+            tools__log::killed("Tangible");
         }
 
     private:

@@ -25,37 +25,38 @@
  */
 
 
-#ifndef GAME_TEST
-#define GAME_TEST
+#ifndef GAME_TOOLS__LOG
+#define GAME_TOOLS__LOG
 
-namespace test
+namespace tools__log
 {
-    void launched(std::string _name = "Object")
-    {
-        std::cerr << _name << " was launched" << std::endl;
-    }
+  void launched(std::string _name = "Object")
+  {
+    std::cerr << _name << " was launched" << std::endl;
+  }
 
-    void created(std::string _name = "Object")
-    {
-        std::cerr << _name << " was created" << std::endl;
-    }
+  void created(std::string _name = "Object")
+  {
+    std::cerr << _name << " was created" << std::endl;
+  }
 
-    void killed(std::string _name = "Object")
-    {
-        std::cerr << _name << " was killed" << std::endl;
-    }
+  void killed(std::string _name = "Object")
+  {
+    std::cerr << _name << " was killed" << std::endl;
+  }
 
-    void copied(std::string _name = "Object")
-    {
-        std::cerr << _name << " was copied" << std::endl;
-    }
+  void copied(std::string _name = "Object")
+  {
+    std::cerr << _name << " was copied" << std::endl;
+  }
 
-    void cleared(std::string _name = "Array")
-    {
-        std::cerr << _name << " was cleared" << std::endl;
-    }
+  void cleared(std::string _name = "Array")
+  {
+    std::cerr << _name << " was cleared" << std::endl;
+  }
 };
 
-#endif // GAME_TEST
+#endif // GAME_TOOLS__LOG
 
 // debug  log and print
+

@@ -25,28 +25,34 @@
  */
 
 
-#include "./lib/game.hpp"
+#include "lib/game.hpp"
 
 int main()
 {
     system("echo   Welcome to the game!"); // goto add mesages
     // Container();
+
     Block();
     Cell();
+    Container();
+    Coordinates();
+    Count();
+    Craft();
+    Element();
     Essence();
+    Exp();
     // Functions();
     Game();
     Man();
+    Map();
     Mouse();
     NotTangible();
     Object();
+    Objects();
     Slot();
     Tangible();
-
-    Tangible();
-    Coordinates();
-    Exp();
     Xp();
+
     Slot slot = Slot();
     slot.add_my_type("Slot");
     tools_cpp::print(slot.get_my_type());

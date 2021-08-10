@@ -25,36 +25,7 @@
  */
 
 
-#ifndef GAME_OBJECT_NOT__TANGIBLE_NUMBERS
-#define GAME_OBJECT_NOT__TANGIBLE_NUMBERS
+The Numbers class is equal to Cell, so I delete it. But I keep the Count class
+because it is unique.
 
-#include "./not__tangible.hpp"
-
-class Numbers: public NotTangible
-{
-    /* Example Numberses: Slot ... */
-
-    public:
-
-      Numbers()
-    {
-        this->add_my_type("Stack");
-        this->add_my_type("Numbers");
-
-        cout << "Numbers created" << endl;
-    }
-
-
-        ~Numbers()
-        {
-            cout << "Numbers killed" << endl;
-        }
-
-    private:
-
-        //  список всех обьектов стака:
-        std::vector<std::string> links_on_objects;
-};
-
-#endif /* GAME_OBJECT_NOT__TANGIBLE_NUMBERS */
 

@@ -24,27 +24,27 @@
  *
  */
 
+#include "block.hpp"
+#include "cell.hpp"
+#include "container.hpp"
+#include "coordinates.hpp"
+#include "count.hpp"
+#include "craft.hpp"
+#include "element.hpp"
+#include "essence.hpp"
+#include "exp.hpp"
+#include "man.hpp"
+#include "map.hpp"
+#include "mouse.hpp"
+#include "not__tangible.hpp"
+#include "object.hpp"
+#include "objects.hpp"
+#include "slot.hpp"
+#include "tangible.hpp"
+#include "tools__cpp.hpp"
+#include "tools__log.hpp"
+#include "tools__object.hpp"
 
-// for tests:
-#include "./block.hpp"
-#include "./cell.hpp"
-#include "./container.hpp"
-#include "./essence.hpp"
-#include "./tools__cpp.hpp"
-
-// #include "./inventory.hpp"
-#include "./man.hpp"
-#include "./mouse.hpp"
-#include "./not__tangible.hpp"
-#include "./object.hpp"
-#include "./slot.hpp"
-#include "./tangible.hpp"
-#include "./test.hpp"
-
-
-#include "objects.hpp" // Objects
-#include "tools__cpp.hpp" //
-#include "./map.hpp" // Map
 
 #ifndef GAME
 #define GAME

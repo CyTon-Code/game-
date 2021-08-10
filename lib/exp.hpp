@@ -28,9 +28,9 @@
 #ifndef GAME_ELEMENT_EXP
 #define GAME_ELEMENT_EXP
 
-#include "./element.hpp"
+#include "element.hpp"
 
-#include "./test.hpp"
+#include "tools__log.hpp"
 
 class Exp : public Element
 {
@@ -40,19 +40,19 @@ class Exp : public Element
 
         Exp()
         {
-           test::created("Exp");
+           tools__log::created("Exp");
         }
 
         Exp(const long int &_exp)
         {
             this->exp = _exp;
 
-            test::copied("Exp");
+            tools__log::copied("Exp");
         }
 
         ~Exp()
         {
-            test::killed("Exp");
+            tools__log::killed("Exp");
         }
 
     private:

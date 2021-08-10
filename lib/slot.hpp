@@ -28,47 +28,50 @@
 #ifndef GAME_OBJECT_NOT__TANGIBLE_SLOT
 #define GAME_OBJECT_NOT__TANGIBLE_SLOT
 
-#include "./not__tangible.hpp"
+#include "not__tangible.hpp"
+
+#include "tools__log.hpp"
+
 
 class Slot: public NotTangible
 {
-    /* Example Slots: Slot ... */
+  /* Example Slots: Slot ... */
 
-    public:
+  public:
 
-      Slot()
+    Slot()
     {
-        this->add_my_type("Container");
-        this->add_my_type("Slot");
+      this->add_my_type("Container");
+      this->add_my_type("Slot");
 
-        cout << "Slot created" << endl;
+      tools__log::created("Slot");
     }
 
 
-        ~Slot()
-        {
-            this->clearTypesOfChanges();
+    ~Slot()
+    {
+      this->clearTypesOfChanges();
 
-            cout << "Slot killed" << endl;
-        }
+      tools__log::killed("Slot");
+    }
 
-        void clearSlot()
-        {
-            this->clearObject();
-            this->clearTypesOfChanges();
-        }
+    void clearSlot()
+    {
+      this->clearObject();
+      this->clearTypesOfChanges();
+    }
 
-        void clearTypesOfChanges()
-        {
-            this->types_of_changes.clear();
+    void clearTypesOfChanges()
+    {
+      this->types_of_changes.clear();
 
-            test::cleared("types of changes");
-        }
+      tools__log::cleared("types of changes");
+    }
 
-    private:
+  private:
 
-        // типы влияющие на статистику объекта в котором нахожусь:
-        std::vector<std::string> types_of_changes;
+    // типы влияющие на статистику объекта в котором нахожусь:
+    std::vector<std::string> types_of_changes;
 };
 
 #endif /* GAME_OBJECT_NOT__TANGIBLE_SLOT */

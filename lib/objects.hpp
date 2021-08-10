@@ -28,6 +28,9 @@
 #ifndef GAME_OBJECTS
 #define GAME_OBJECTS
 
+#include "cell.hpp"
+#include "slot.hpp"
+
 class Objects
 {
     /* Objects: store all objects in game */

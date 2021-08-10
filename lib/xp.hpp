@@ -30,7 +30,7 @@
 
 #include "./element.hpp"
 
-#include "./test.hpp"
+#include "./tools__log.hpp"
 
 class Xp : public Element
 {
@@ -40,19 +40,19 @@ class Xp : public Element
 
         Xp()
         {
-            test::created("Xp");
+            tools__log::created("Xp");
         }
 
         Xp(const long int &_xp)
         {
             this->xp = _xp;
 
-            test::copied("Xp");
+            tools__log::copied("Xp");
         }
 
         ~Xp()
         {
-            test::killed("Xp");
+            tools__log::killed("Xp");
         }
 
     private:

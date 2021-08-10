@@ -67,9 +67,9 @@ namespace tools_cpp
       {
         return true;
       }
+    }
 
       return false;
-    }
   }
 
 
@@ -96,4 +96,5 @@ namespace tools_cpp
 };
 
 #endif // GAME_TOOLS__CPP
+
 
