@@ -31,7 +31,7 @@
 #define GAME_ELEMENT_CRAFT
 
 #include "element.hpp"
-#include "../tools/log.hpp"
+#include "../tools/tools__log.hpp"
 
 class Craft : public Element
 {

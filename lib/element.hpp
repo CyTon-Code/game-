@@ -28,8 +28,8 @@
 #ifndef GAME_ELEMENT
 #define GAME_ELEMENT
 
-#include "../tools/cpp.hpp"
-#include "../tools/log.hpp"
+#include "../tools/tools__cpp.hpp"
+#include "../tools/tools__log.hpp"
 
 class Element
 {

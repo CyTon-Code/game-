@@ -44,9 +44,9 @@
 #include "object.hpp"
 #include "slot.hpp"
 #include "tangible.hpp"
-#include "../tools/cpp.hpp"
-#include "../tools/log.hpp"
-#include "../tools/object.hpp"
+#include "../tools/tools__cpp.hpp"
+#include "../tools/tools__log.hpp"
+#include "../tools/tools__object.hpp"
 
 #endif // GAME_ALL_OBJECTS
 

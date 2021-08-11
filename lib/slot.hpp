@@ -30,7 +30,7 @@
 
 #include "not__tangible.hpp" // for inheritance
 
-#include "../tools/log.hpp" // for log
+#include "../tools/tools__log.hpp" // for log
 
 /* */
 class Slot: public NotTangible

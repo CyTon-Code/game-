@@ -29,8 +29,8 @@
 #define GAME_OBJECT
 
 
-#include "../tools/cpp.hpp"
-#include "../tools/log.hpp"
+#include "../tools/tools__cpp.hpp"
+#include "../tools/tools__log.hpp"
 
 // debug and test:
 using std::cout, std::endl;

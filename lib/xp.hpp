@@ -36,7 +36,7 @@
 
 #include "element.hpp" // for inheritance
 
-#include "../tools/log.hpp" // for log
+#include "../tools/tools__log.hpp" // for log
 
 /* */
 class Xp : public Element

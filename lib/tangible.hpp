@@ -35,15 +35,15 @@
 #define GAME_OBJECT_TANGIBLE
 
 /* for inheritance: */
-#include "object.hpp"
+#include "object.hpp"    /* Object */
 
 /* for log: */
-#include "../tools/log.hpp"
+#include "../tools/tools__log.hpp"    /* tools__log */
 
 /* for using: */
-#include "coordinates.hpp"
-#include "exp.hpp"
-#include "xp.hpp"
+#include "coordinates.hpp"    /* Coordinates */
+#include "exp.hpp"    /* Exp */
+#include "xp.hpp"    /* Xp */
 
 class Tangible : public Object
 {

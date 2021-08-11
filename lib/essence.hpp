@@ -31,7 +31,7 @@
 
 #include "tangible.hpp"
 
-#include "../tools/log.hpp"
+#include "../tools/tools__log.hpp"
 
 class Essence : public Tangible
 {

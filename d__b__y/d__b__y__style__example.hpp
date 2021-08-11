@@ -36,15 +36,23 @@
 ...
 /* WARNING
  *
+ * <!-- STYLE NAMING -->
+ *
  * File address: ./tools/d__b__y__style__example.hpp
  *
- * or
+ * OR
  *
  * Inheritance in game: DBYStyleExample is Tools
  *
- * equal:
+ * EQUAL:
  *
- * define: TOOLS_D__B__Y__STYLE__EXAMPLE
+ * define: __TOOLS_D__B__Y__STYLE__EXAMPLE
+ *
+ * <!--
+ *  sometimes the name of the first folder can be changed to DBY or GAME
+ *  - the name of the company or the name of the game
+ *  -->
+ *
  * namespace, var, fun: d__b__y__style__example
  * class: DBYStyleExample
  *
@@ -54,36 +62,36 @@
 
 ...
 /* */
-#ifndef TOOLS_D__B__Y__STYLE__EXAMPLE
-#define TOOLS_D__B__Y__STYLE__EXAMPLE
+#ifndef __TOOLS_D__B__Y__STYLE__EXAMPLE
+#define __TOOLS_D__B__Y__STYLE__EXAMPLE
 
 ...
 
-#endif /* TOOLS_D__B__Y__STYLE__EXAMPLE */
-...
-
-...
-/* reason use this: */
-#include *lib/ <library.hpp>     /* commands, that, I, use */
+#endif /* __TOOLS_D__B__Y__STYLE__EXAMPLE */
 ...
 
 ...
 /* reason use this: */
-#include ./    "library.hpp"     /* commands, that, I, use */
+#include *lib/ <library>    /* commands, that, I, use */
 ...
 
 ...
-/* this function makes it ... */
+/* reason use this: */
+#include ./    "library.hpp"    /* commands, that, I, use */
+...
+
+...
+/* my_function makes it ... */
 return_type
-name_function (type_element name_element, ...)
+my_function (type_element name_element, ...)
 {
   ...
 }
 ...
 
 ...
-/* this namespace stores ... */
-namespace name_namespace
+/* my_namespace stores: ... */
+namespace my_namespace
 {
   ...
 };
@@ -91,7 +99,7 @@ namespace name_namespace
 
 ...
 /* */
-else
+else / catch / ...
   {
     ...
   }
@@ -115,6 +123,26 @@ while (...) /* */
 ...
 
 ...
+/* */
+class MyParentClass // STORE: my__parent__class.hpp
+{
+  /* Example MyParentClasses: MyParentClass MyClass ... */
+
+  public:
+
+    ...
+
+  private:
+
+    ...
+};
+...
+
+...
+/* for inheritance: */
+#include "my__parent__class.hpp"    /* MyParentClass */
+
+/* */
 class MyClass : public MyParentClass
 {
   /* Example MyClasses: MyClass ... */
@@ -131,7 +159,7 @@ class MyClass : public MyParentClass
 
 ...
 /* after creation: */
-MyClass()
+MyClass() //  EVENTS function
 {
   ...
 
@@ -141,7 +169,7 @@ MyClass()
 
 ...
 /* before removal: */
-~MyClass()
+~MyClass() //  EVENTS function
 {
   ...
 
@@ -151,7 +179,7 @@ MyClass()
 
 ...
 /* copying: */
-~MyClass(...)
+~MyClass(...) //  EVENTS function
 {
   ...
 

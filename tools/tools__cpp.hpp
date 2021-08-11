@@ -26,7 +26,7 @@
 
 
 #ifndef TOOLS_TOOLS__CPP
-#define TOOLS_CPP
+#define TOOLS_TOOLS__CPP
 
 #include <iostream>     // std::cout
 #include <vector>       // std::vector
@@ -72,7 +72,7 @@ namespace tools_cpp
     return false;
   }
 
-  
+
   /* push (back) if value not found in array */
   void
   add (std::vector<std::string> &array, std::string value)
@@ -96,5 +96,5 @@ namespace tools_cpp
   }
 };
 
-#endif /* TOOLS_CPP */
+#endif /* TOOLS_TOOLS__CPP */
 
