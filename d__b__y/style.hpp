@@ -1,9 +1,13 @@
 /* INFO
  *
- * File: d__b__y__style__example.hpp
+ * -- META DATA --
+ *
+ * File: style.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
+ *
+ * -- COPYRIGHT --
  *
  * Copyright 2021 DBY Company <dal@bo.yob>
  *
@@ -29,6 +33,28 @@
 ...
 /* THOUGHT
  *
+ * -- DEFINE VARIABLE -- STYLE NAMING--
+ *
+ * If the name DEFINE VARIABLE starts with the word F, this name is the
+ * path to this file from the parent folder of your game.
+ *
+ * If the name DEFINE VARIABLE starts with any word other than F, it is
+ * the name of the company or the name of the game - in my case it is
+ * DBY or GAME. Then the inheritance style is used in that case.
+ *
+ * -- DEFINE VARIABLE -- USING _ --
+ *
+ * The one this _ symbol in DEFINE VARIABLE means '/' in path and 'is'
+ * in inheritance.
+ *
+ * The two this __ symbols in DEFINE VARIABLE is a separator between
+ * words in the name.
+ *
+ * -- FINALLY --
+ *
+ * This is to make it easier to find your classes, namespaces, and so
+ * on ... in the development environment
+ *
  *
  */
 ...
@@ -36,48 +62,54 @@
 ...
 /* WARNING
  *
- * <!-- STYLE NAMING -->
+ * -- STYLE NAMING --
  *
  * File address: ./tools/d__b__y__style__example.hpp
  *
  * OR
  *
- * Inheritance in game: DBYStyleExample is Tools
+ * Inheritance in game: Style is DBY
  *
  * EQUAL:
  *
- * define: _TOOLS_D__B__Y__STYLE__EXAMPLE
- *
- * <!--
- *  sometimes the name of the first folder can be changed to DBY or GAME
- *  - the name of the company or the name of the game
- *  -->
- *
- * namespace, var, fun: d__b__y__style__example
- * class: DBYStyleExample
+ * define: F_D__B__Y_STYLE
+ * namespace, var, fun: style
+ * class: Style
+ * parent class: DBY
+ * parent parent class:
  *
  *
  */
 ...
 
 ...
-/* */
-#ifndef _TOOLS_D__B__Y__STYLE__EXAMPLE
-#define _TOOLS_D__B__Y__STYLE__EXAMPLE
+/* style for: Classes ...: */
+#ifndef DBY_STYLE
+#define DBY_STYLE
 
 ...
 
-#endif /* _TOOLS_D__B__Y__STYLE__EXAMPLE */
+#endif /* DBY_STYLE */
 ...
 
 ...
-/* reason use this: */
-#include *lib/ <library>    /* commands, that, I, use */
+/* style for: Namespaces ...: */
+#ifndef F_D__B__Y_STYLE
+#define F_D__B__Y_STYLE
+
+...
+
+#endif /* F_D__B__Y_STYLE */
 ...
 
 ...
-/* reason use this: */
-#include ./    "library.hpp"    /* commands, that, I, use */
+/* search this lib in *lib/: */
+#include <library>    /* commands, that, I, use */
+...
+
+...
+/* search this lib in ./: */
+#include "library.hpp"    /* commands, that, I, use */
 ...
 
 ...
@@ -90,7 +122,7 @@ my_function (type_element name_element, ...)
 ...
 
 ...
-/* my_namespace stores: ... */
+/* where use: ... */
 namespace my_namespace
 {
   ...
@@ -99,7 +131,7 @@ namespace my_namespace
 
 ...
 /* */
-else / catch / ...
+for / try / if / else if / while / ... (...)
   {
     ...
   }
@@ -107,7 +139,7 @@ else / catch / ...
 
 ...
 /* */
-for / try / if / else if / while / ... (...)
+else / catch / ...
   {
     ...
   }
@@ -124,7 +156,7 @@ while (...) /* */
 
 ...
 /* */
-class MyParentClass // STORE: my__parent__class.hpp
+class MyParentClass // for example STORE: my__parent__class.hpp
 {
   /* Example MyParentClasses: MyParentClass MyClass ... */
 
@@ -135,6 +167,23 @@ class MyParentClass // STORE: my__parent__class.hpp
   private:
 
     ...
+};
+...
+
+...
+/* */
+class Class
+{
+  /* Example Classes: Class ... */
+
+  private:
+
+    /* if empty move to up please! And not Remove ... */
+
+  public:
+
+    ...
+
 };
 ...
 

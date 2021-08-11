@@ -2,7 +2,7 @@
  *
  * -- META DATA --
  *
- * File: my__namespace.hpp
+ * File: tools__str.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -28,6 +28,38 @@
  *
  *
  */
+
+/* */
+#ifndef F_D__B__Y_TOOLS__STR
+#define F_D__B__Y_TOOLS__STR
+
+/* for write text in IO stream: */
+#include <iostream>    /* std, std::cout, std::endl */
+
+/* for work with string: */
+#include <string>    /* std::string */
+
+/* where use: tools__str::use_function */
+namespace tools__str
+{
+  /* converting_to_string translates c_str into string: */
+  std::string
+  converting_to_string (const char c_str[])
+  {
+    /* convert to string: */
+    return std::string (c_str);
+  }
+
+  /* use_function use converting_chars_to_string function: */
+  void
+  use_function ()
+  {
+    /* write done text in cout: */
+    std::cout << tools__str::converting_to_string ("text") << std::endl;
+  }
+};
+
+#endif /* F_D__B__Y_TOOLS__STR */
 
 /* THOUGHT
  *
@@ -65,29 +97,13 @@
  * EQUAL:
  *
  * define: __D__B__Y_MY__NAMESPACE
- * namespace, var, fun: d__b__y__my__namespace
+ * namespace, var, fun: my__namespace
  * class: MyNamespace
+ * parent class: DBY
+ * parent parent class:
  *
  *
  */
-
-/* */
-#ifndef __D__B__Y_MY__NAMESPACE
-#define __D__B__Y_MY__NAMESPACE
-
-/* my_namespace stores: ... */
-namespace my_namespace
-{
-  /* my_function returned empty string ... */
-  std::string
-  my_function ()
-  {
-    return std::string();
-  }
-};
-
-#endif /* __D__B__Y_MY__NAMESPACE */
-...
 
 ...
 /* reason use this: */
