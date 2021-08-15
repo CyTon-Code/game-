@@ -56,7 +56,16 @@ class Object
       tools__log::killed("Object");
       std::cout << std::endl;
     }
-
+  
+    void save()
+    {
+      tools__cpp::save(this->name, this->my_types, this->types_of_friends, this->types_ignore, this->my_res)
+    }
+  
+    void load()
+    {
+      (this->my_types, this->types_of_friends, this->types_ignore, this->my_res) = tools__cpp::load(this->name)
+    }
 
     std::vector<std::string> get_my_type()
     {
