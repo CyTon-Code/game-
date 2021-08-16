@@ -28,6 +28,8 @@
 #ifndef GAME_TOOLS__OBJECT
 #define GAME_TOOLS__OBJECT
 
+#include "../lib/object.hpp"
+
 namespace tools_object
 {
     // save object in file
@@ -40,7 +42,55 @@ namespace tools_object
 
         object.save();
     }
+/*
+ * Object
+ *
+ *
+ */
+    // save object in file
+    template <class type>
+    void load(type &object)
+    {
+      std::ifstream fin(object.name);
+      char c;
 
+      while (c != '~')
+      {
+        fin >> c;
+          while (c != ' ')
+        {
+          fin >> c;
+        } //
+      } // my_types
+
+      while (c != '~')
+      {
+        fin >> c;
+          while (c != ' ')
+        {
+          fin >> c;
+        } //
+      } // types_of_friends
+
+      while (c != '~')
+      {
+        fin >> c;
+          while (c != ' ')
+        {
+          fin >> c;
+        } //
+      } // types_ignore
+
+      while (c != '~')
+      {
+        fin >> c;
+          while (c != ' ')
+        {
+          fin >> c;
+        } //
+      } // my_res
+      // ...
+    }
 
     // load object from file
 
