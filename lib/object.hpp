@@ -64,7 +64,7 @@ class Object
   
     void load()
     {
-      (this->my_types, this->types_of_friends, this->types_ignore, this->my_res) = tools__cpp::load(this->name)
+      tools__cpp::load(this->my_types, this->types_of_friends, this->types_ignore, this->my_res) = tools__cpp::load(this->name)
     }
 
     std::vector<std::string> get_my_type()
@@ -131,6 +131,9 @@ class Object
     }
 
   private:
+  
+    // TODO:
+    // create: Var -> get set clear append add del find echo print  
 
     // имя файла - обьекта:
     std::string name;
