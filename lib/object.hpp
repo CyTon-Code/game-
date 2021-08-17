@@ -77,28 +77,28 @@ class Object
       ) = tools__cpp::load(this->name)
     }
 
-    std::vector<std::string>
+    Var
     get_my_types()
     {
-      return this->my_types.get();
+      return this->my_types();
     }
   
-    std::vector<std::string>
+    Var
     get_types_of_friends()
     {
-      return this->types_of_friends.get();
+      return this->types_of_friends();
     }
   
-    std::vector<std::string>
+    Var
     get_types_ignore()
     {
-      return this->types_ignore.get();
+      return this->types_ignore();
     }
   
-    std::vector<std::string>
+    Var
     get_my_res()
     {
-      return this->my_res.get();
+      return this->my_res();
     }
   
     std::string
