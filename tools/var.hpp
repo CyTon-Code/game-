@@ -25,17 +25,17 @@
  */
 
 
-#ifndef GAME_VAR
-#define GAME_VAR
+#ifndef GAME_LIST
+#define GAME_LIST
 
-#include <iostream>     // std::cout
-#include <vector>       // std::vector
-#include <string>       // std::string
+#include <iostream>    /* std::cout */
+#include <vector>    /* std::vector */
+#include <string>    /* std::string */
 
-#include "../tools/tools__log.hpp" // tools__log
+#include "../tools/tools__log.hpp" /* tools__log */
 
 /* */
-class Var
+class List
 {
   /* Example Objects: *these are all objects in the game* */
 
@@ -43,18 +43,18 @@ class Var
   public:
 
     /* constructor function */
-    Var ()
+    List ()
     {
       std::cout << std::endl;
-      tools__log::created ("Var");
+      tools__log::created ("List");
     }
 
     /* destructor function */
-    ~Var ()
+    ~List ()
     {
       this->clear ();
 
-      tools__log::killed ("Var");
+      tools__log::killed ("List");
       std::cout << std::endl;
     }
     
@@ -73,11 +73,11 @@ class Var
     }
   
     /* copy function */  
-    Var (std::vector<std::string> _array)
+    List (std::vector<std::string> _array)
     {
       this->set (_array);
       
-      tools__log::coptied ("Var");
+      tools__log::coptied ("List");
     }
   
   /* important */
@@ -104,7 +104,7 @@ class Var
     {
       this->array.clear ();
 
-      tools__log::cleared ("Var");
+      tools__log::cleared ("List");
     }
   
     /* push (back) in vector */
@@ -194,5 +194,5 @@ class Var
     std::vector<std::string> array;
 };
 
-#endif // GAME_VAR
+#endif /* GAME_LIST */
 
