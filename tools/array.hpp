@@ -100,11 +100,11 @@ class Array
 
     /* clear my array */
     void
-    clear ()
+    clear (_name_array_for_log="Array")
     {
       this->array.clear ();
 
-      tools__log::cleared ("Array");
+      tools__log::cleared (_name_array_for_log);
     }
   
     /* push (back) in vector */
