@@ -60,11 +60,11 @@ namespace tools_cpp
 
   /* find in vector */
   bool
-  find (const std::vector<std::string> &array, std::string name)
+  find (const std::vector<std::string> &array, std::string value)
   {
     for (auto i: array)
       {
-        if (i == name)
+        if (i == value)
           {
             return true;
           }
