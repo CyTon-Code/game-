@@ -72,7 +72,7 @@ class List
       this->array = _array;
     }
   
-    /* copy function */  
+    /* copy to my array */  
     List (std::vector<std::string> _array)
     {
       this->set (_array);
