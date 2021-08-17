@@ -28,7 +28,7 @@
 #ifndef GAME_OBJECT
 #define GAME_OBJECT
 
-#include "../tools/list.hpp"
+#include "../tools/array.hpp"
 #include "../tools/tools__log.hpp"
 
 class Object
