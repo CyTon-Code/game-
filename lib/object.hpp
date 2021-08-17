@@ -116,9 +116,6 @@ class Object
 
   private:
   
-    // TODO:
-    // create: Var -> get set clear append add del find echo print  
-
     // имя файла - обьекта:
     std::string name;
 
