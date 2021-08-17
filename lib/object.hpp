@@ -28,8 +28,7 @@
 #ifndef GAME_OBJECT
 #define GAME_OBJECT
 
-#include "../tools/tools__cpp.hpp"
-#include "../tools/var.hpp"
+#include "../tools/list.hpp"
 #include "../tools/tools__log.hpp"
 
 class Object
@@ -77,25 +76,25 @@ class Object
       ) = tools__cpp::load(this->name)
     }
 
-    Var
+    List
     get_my_types()
     {
       return this->my_types();
     }
   
-    Var
+    List
     get_types_of_friends()
     {
       return this->types_of_friends();
     }
   
-    Var
+    List
     get_types_ignore()
     {
       return this->types_ignore();
     }
   
-    Var
+    List
     get_my_res()
     {
       return this->my_res();
@@ -124,16 +123,16 @@ class Object
     std::string name;
 
     // типы за которые меня принимают:
-    Var my_types;
+    List my_types;
 
     // типы которые я могу позволить хранить у себя в контейнерах:
-    Var types_of_friends;
+    List types_of_friends;
 
     // типы которые я не могу позволить хранить у себя в контейнерах: - я также не могу хранить те вещи которые не может родителский обьект - например сумку в сумке
-    Var types_ignore;
+    List types_ignore;
 
     // ресурсы которые я в себе храню
-    Var my_res;
+    List my_res;
 };
 
 #endif // GAME_OBJECT
