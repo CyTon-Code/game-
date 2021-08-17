@@ -50,8 +50,7 @@ class Var
     }
 
     /* destructor function */
-    ~
-    Var ()
+    ~Var ()
     {
       this->clearObject ();
 
