@@ -46,7 +46,9 @@ namespace tools_cpp
     std::cout << std::endl;
   }
 
-  /* echo-print-write this vector in cout */
+  /* 
+   * python style:
+   * echo-print-write this vector in cout */
   void
   print (const std::vector<std::string> array)
   {
@@ -72,7 +74,6 @@ namespace tools_cpp
     return false;
   }
 
-
   /* push (back) if value not found in array */
   void
   add (std::vector<std::string> &array, std::string value)
@@ -86,7 +87,6 @@ namespace tools_cpp
         std::cerr << "I can't pushed! Vector have this value!" << std::endl;
       }
   }
-
 
   /* push (back) in vector */
   void
