@@ -85,12 +85,12 @@ class List
   
     /* find in vector */
     bool
-    find (std::string value)
+    find (const std::string &_value)
       const
     {
       for (auto i: this->array)
         {
-          if (i == value)
+          if (i == _value)
             {
               return true;
             }
@@ -109,9 +109,9 @@ class List
   
     /* push (back) in vector */
     void
-    append (std::string value)
+    append (const std::string &_value)
     {
-      this->array.push_back (value);
+      this->array.push_back (_value);
     }   
   
     /* push (back) if no _value is found in the array */
@@ -168,9 +168,9 @@ class List
   /* converting a string from C to Cpp */
   public:
     
-    /* converting and after push (to end) if no VaLue is found in the array */
+    /* converting and after push (to end) if no _value is found in the array */
     void
-    add (char* _value)
+    add (const char* _value)
     {
       this->add (std::string (_value));
     }
@@ -183,6 +183,16 @@ class List
     void
     del (const std::string &_value)
     {
+      ...
+    }
+    */
+  
+    /* */
+    /*
+    int
+    search (const std::string &_value)
+    {
+      ...
     }
     */
   
