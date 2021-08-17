@@ -98,7 +98,7 @@ class List
       return false;
     } 
 
-    /* */
+    /* clear my array */
     void
     clear ()
     {
