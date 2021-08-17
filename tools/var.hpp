@@ -52,30 +52,30 @@ class Var
     /* destructor function */
     ~Var ()
     {
-      this->clearObject ();
+      this->clear ();
 
       tools__log::killed ("Var");
       std::cout << std::endl;
     }
     
-    /* get my res */
+    /* get my array */
     std::vector<std::string>
     get ()
     {
-      return this->res;
+      return this->array;
     }
     
-    /* set my res */
+    /* set my array */
     void
-    set (std::vector<std::string> _res)
+    set (std::vector<std::string> _array)
     {
-      this->res = _res;
+      this->array = _array;
     }
   
     /* copy function */  
-    Var (std::vector<std::string> _res)
+    Var (std::vector<std::string> _array)
     {
-      this->set (_res);
+      this->set (_array);
       
       tools__log::coptied ("Var");
     }
@@ -88,7 +88,7 @@ class Var
     find (std::string value)
       const
     {
-      for (auto i: this->res)
+      for (auto i: this->array)
         {
           if (i == value)
             {
@@ -102,20 +102,21 @@ class Var
     void
     clear ()
     {
-      this->res.clear ();
+      this->array.clear ();
 
       tools__log::cleared ("Var");
     }
+  
     /* push (back) in vector */
     void
     append (std::string value)
     {
-      this->res.push_back (value);
+      this->array.push_back (value);
     }   
   
     /* push (back) if no _value is found in the array */
     void
-    add (std::string _value)
+    add (const std::string &_value)
     {
       if (not this->find (_value))
         {
@@ -123,17 +124,25 @@ class Var
         }
       else
         {
-          std::cerr << "I can't pushed! Vector have this value!" << std::endl;
+          std::cerr << "I can't pushed! array have this value!" << std::endl;
         }
     }
 
-    /* echo-print-write this vector in cout */
+    /* output this vector to the terminal
+     * 
+     * start - output before printing array
+     * step - print after everyone ellement in array
+     * stop - output after printing array
+     * return - void
+     * 
+     * 
+     */
     void
     echo (std::string _step=" ", std::string _stop="", std::string _start="")
       const
     {
       std::cout << _start;
-      for (auto i: this->res)
+      for (auto i: this->array)
         {
           std::cout << i << _step;
         }
@@ -143,7 +152,7 @@ class Var
   /* Python style */
   public:
     
-    /* echo vector in python style: */
+    /* output this vector to the terminal in python style */
     void
     print ()
       const
@@ -159,20 +168,30 @@ class Var
   /* converting a string from C to Cpp */
   public:
     
-    /* */
+    /* converting and after push (to end) if no VaLue is found in the array */
     void
-    add (char* value)
+    add (char* _value)
     {
-      this->add (std::string (value));
+      this->add (std::string (_value));
     }
-
+    
+  /* TODO add function */
+  public:
+      
+    /* */
+    /*
+    void
+    del (const std::string &_value)
+    {
+    }
+    */
+  
+     /* get end element * / end ()
+     /* ... () */
   private:
   
-    // TODO:
-    // create: Var -> del find echo print  ...
-
-    // типы за которые меня принимают:
-    std::vector<std::string> res;
+    /* my lines */ 
+    std::vector<std::string> array;
 };
 
 #endif // GAME_VAR
