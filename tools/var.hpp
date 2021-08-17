@@ -39,25 +39,17 @@ class Var
 {
   /* Example Objects: *these are all objects in the game* */
 
-  /* */
+  /* The most important */
   public:
 
-    /* */
+    /* constructor function */
     Var ()
     {
       std::cout << std::endl;
       tools__log::created ("Var");
     }
 
-    /* */  
-    Var (std::vector<std::string> _res)
-    {
-      this->set (_res);
-      
-      tools__log::coptied ("Var");
-    }
-
-    /* */
+    /* destructor function */
     ~
     Var ()
     {
@@ -81,52 +73,16 @@ class Var
       this->res = _res;
     }
   
-    /* push (back) if value not found in array */
-    void
-    add (std::string value)
+    /* copy function */  
+    Var (std::vector<std::string> _res)
     {
-      if (not this->find (value))
-        {
-          this->append (value);
-        }
-      else
-        {
-          std::cerr << "I can't pushed! Vector have this value!" << std::endl;
-        }
+      this->set (_res);
+      
+      tools__log::coptied ("Var");
     }
   
-    /* push (back) in vector */
-    void
-    append (std::string value)
-    {
-      this->res.push_back (value);
-    }   
-    
-    /* echo-print-write this vector in cout */
-    void
-    echo (std::string _step=" ", std::string _stop="", std::string _start="")
-      const
-    {
-      std::cout << _start;
-      for (auto i: this->res)
-        {
-          std::cout << i << _step;
-        }
-      std::cout << _stop;
-    }
-  
-    /* echo in python style: */
-    void
-    print ()
-      const
-    {
-      this->echo
-        (
-          ", ", // step - separator
-          "]", // stop - example: \n
-          "[" // start
-        )
-    }
+  /* important */
+  public:
   
     /* find in vector */
     bool
@@ -151,9 +107,57 @@ class Var
 
       tools__log::cleared ("Var");
     }
+    /* push (back) in vector */
+    void
+    append (std::string value)
+    {
+      this->res.push_back (value);
+    }   
   
-  // for C lang:
-  /* This need?? */
+    /* push (back) if no _value is found in the array */
+    void
+    add (std::string _value)
+    {
+      if (not this->find (_value))
+        {
+          this->append (_value);
+        }
+      else
+        {
+          std::cerr << "I can't pushed! Vector have this value!" << std::endl;
+        }
+    }
+
+    /* echo-print-write this vector in cout */
+    void
+    echo (std::string _step=" ", std::string _stop="", std::string _start="")
+      const
+    {
+      std::cout << _start;
+      for (auto i: this->res)
+        {
+          std::cout << i << _step;
+        }
+      std::cout << _stop;
+    }
+
+  /* Python style */
+  public:
+    
+    /* echo vector in python style: */
+    void
+    print ()
+      const
+    {
+      this->echo
+        (
+          ", ", // step - separator
+          "]", // stop - example: \n
+          "[" // start
+        )
+    }
+    
+  /* converting a string from C to Cpp */
   public:
     
     /* */
