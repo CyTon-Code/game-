@@ -25,18 +25,22 @@
  */
 
 
+/* */
 #ifndef GAME_OBJECT
 #define GAME_OBJECT
 
 #include "../tools/array.hpp"
 #include "../tools/tools__log.hpp"
 
+/* */
 class Object
 {
   /* Example Objects: *these are all objects in the game* */
 
+  /* */
   public:
 
+    /* */
     Object()
     {
       this->add_my_type("Object");
@@ -45,18 +49,20 @@ class Object
       tools__log::created("Object");
     }
 
-    ~
-    Object()
+    /* */
+    ~Object()
     {
-      this->clearObject();
+      this->clear();
 
       tools__log::killed("Object");
       std::cout << std::endl;
     }
   
+    /* */
     void
     save()
     {
+      /* */
       tools__cpp::save(
         this->name,
         this->my_types,
@@ -65,9 +71,11 @@ class Object
       )
     }
   
+    /* */
     void
     load()
     {
+      /* */
       tools__cpp::load(
         this->my_types,
         this->types_of_friends,
@@ -76,61 +84,79 @@ class Object
       ) = tools__cpp::load(this->name)
     }
 
+    /* */
     List
     get_my_types()
     {
       return this->my_types();
     }
   
+    /* */
     List
     get_types_of_friends()
     {
       return this->types_of_friends();
     }
   
+    /* */
     List
     get_types_ignore()
     {
       return this->types_ignore();
     }
   
+    /* */
     List
     get_my_res()
     {
       return this->my_res();
     }
   
+    /* */
     std::string
     get_name()
     {
       return this->name;
     }
 
-    void clear()
+    /* */
+    void
+    clear_Object()
     {
       this->my_types.clear();
       this->types_of_friends.clear();
       this->types_ignore.clear();
       this->my_res.clear();
     }
+  
+    /* */
+    void
+    clear()
+    {
+      this->clear_Object();
+    }
 
   private:
   
-    // имя файла - обьекта:
+    /* имя файла - обьекта */
     std::string name;
 
-    // типы за которые меня принимают:
+    /* типы за которые меня принимают */
     List my_types;
 
-    // типы которые я могу позволить хранить у себя в контейнерах:
+    /* типы которые я могу позволить хранить у себя в контейнерах */
     List types_of_friends;
 
-    // типы которые я не могу позволить хранить у себя в контейнерах: - я также не могу хранить те вещи которые не может родителский обьект - например сумку в сумке
+    /* типы которые я не могу позволить хранить у себя в контейнерах
+     * - я также не могу хранить те вещи которые не может родителский обьект - например сумку в сумке
+     *
+     *
+     */
     List types_ignore;
 
-    // ресурсы которые я в себе храню
+    /* ресурсы которые я в себе храню */
     List my_res;
 };
 
-#endif // GAME_OBJECT
+#endif /* GAME_OBJECT */
 
