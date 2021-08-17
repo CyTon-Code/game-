@@ -1,5 +1,5 @@
 /*
- * File: var.hpp
+ * File: array.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
@@ -35,7 +35,7 @@
 #include "../tools/tools__log.hpp"    /* tools__log */
 
 /* */
-class List
+class Array
 {
   /* Example Objects: *these are all objects in the game* */
 
@@ -43,18 +43,18 @@ class List
   public:
 
     /* constructor function */
-    List ()
+    Array ()
     {
       std::cout << std::endl;
-      tools__log::created ("List");
+      tools__log::created ("Array");
     }
 
     /* destructor function */
-    ~List ()
+    ~Array ()
     {
       this->clear ();
 
-      tools__log::killed ("List");
+      tools__log::killed ("Array");
       std::cout << std::endl;
     }
     
@@ -73,11 +73,11 @@ class List
     }
   
     /* copy to my array */  
-    List (std::vector<std::string> _array)
+    Array (std::vector<std::string> _array)
     {
       this->set (_array);
       
-      tools__log::coptied ("List");
+      tools__log::coptied ("Array");
     }
   
   /* important */
@@ -104,7 +104,7 @@ class List
     {
       this->array.clear ();
 
-      tools__log::cleared ("List");
+      tools__log::cleared ("Array");
     }
   
     /* push (back) in vector */
