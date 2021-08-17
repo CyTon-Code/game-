@@ -28,73 +28,7 @@
 #ifndef TOOLS_TOOLS__CPP
 #define TOOLS_TOOLS__CPP
 
-#include <iostream>     // std::cout
-#include <vector>       // std::vector
-#include <string>       // std::string
-
-/* */
-namespace tools_cpp
-{
-  /* echo-print-write this vector in cout */
-  void
-  echo (const std::vector<std::string> array)
-  {
-    for (auto i: array)
-      {
-        std::cout << i << " ";
-      }
-    std::cout << std::endl;
-  }
-
-  /* 
-   * python style:
-   * echo-print-write this vector in cout */
-  void
-  print (const std::vector<std::string> array)
-  {
-    std::cout << "[";
-    for (auto i: array)
-      {
-        std::cout << i << ", ";
-      }
-    std::cout << "]" << std::endl;
-  }
-
-  /* find in vector */
-  bool
-  find (const std::vector<std::string> &array, std::string value)
-  {
-    for (auto i: array)
-      {
-        if (i == value)
-          {
-            return true;
-          }
-      }
-    return false;
-  }
-
-  /* push (back) if value not found in array */
-  void
-  add (std::vector<std::string> &array, std::string value)
-  {
-    if (not tools_cpp::find (array, value))
-      {
-        array.push_back (value);
-      }
-    else
-      {
-        std::cerr << "I can't pushed! Vector have this value!" << std::endl;
-      }
-  }
-
-  /* push (back) in vector */
-  void
-  append (std::vector<std::string> &array, std::string value)
-  {
-    array.push_back (value);
-  }
-};
+# This library has been moved to var.hpp
 
 #endif /* TOOLS_TOOLS__CPP */
 
