@@ -57,7 +57,7 @@ class Tangible : public Object
     /* */
     Tangible ()
     {
-      this->get_my_type().add ("Tangible");
+      this->get_my_type ().add ("Tangible");
 
       tools__log::created ("Tangible");
     }
