@@ -34,36 +34,56 @@
 #ifndef GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 #define GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 
+/* for inheritance */
 #include "./not__tangible.hpp"
 
+/* for using */
 #include "../tools/array.hpp"
 
+/* for log */
+#include "../tools/tools__log.hpp"
+
+/* */
 class Container : public NotTangible
 {
   /* Example Container: Cell Slot Panel ... */
-
+    
+  /* */
   public:
-
-    Container()
+    
+    /* */
+    Container ()
     {
-      this->get_my_type().add("Container");
+      this->get_my_type ().add("Container");
 
-      cout << "Container was created" << endl;
+      tools__log::created ("Container");
+    }
+  
+    /* */
+    ~Container ()
+    {
+      tools__log::killed ("Container");
+    }
+    
+    /* */
+    void
+    clear_Container ()
+    {
+      this->my_res.clear ();
+    }    
+
+    /* */
+    void
+    clear ()
+    {
+      this->clear_Container ();
     }
 
-    ~Container()
-    {
-      cout << "Container was killed" << endl;
-    }
-
-    void clearContainer()
-    {
-      this->my_res.clear();
-    }
-
+    
+  /* */
   private:
 
-    // ресурсы которые я в себе храню
+    /* The resources I keep in me */
     Array my_res;
 };
 
