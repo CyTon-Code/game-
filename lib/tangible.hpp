@@ -71,13 +71,13 @@ class Tangible : public Object
   /* */
   private:
 
-    /* XYZ: */
+    /* XYZ */
     Coordinates coordinates;
 
-    /* EXP: */
+    /* EXP */
     Exp exp;
 
-    /* XP: */
+    /* XP */
     Xp xp;
 };
 
