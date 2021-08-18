@@ -35,13 +35,13 @@
 #define GAME_OBJECT_NOT__TANGIBLE_CONTAINER
 
 /* for inheritance */
-#include "./not__tangible.hpp"
+#include "./not__tangible.hpp"    /* NotTangible */
 
 /* for using */
-#include "../tools/array.hpp"
+#include "../tools/array.hpp"    /* Array */
 
 /* for log */
-#include "../tools/tools__log.hpp"
+#include "../tools/tools__log.hpp"    /* tools__log */
 
 /* */
 class Container : public NotTangible
