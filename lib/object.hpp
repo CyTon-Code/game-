@@ -29,7 +29,10 @@
 #ifndef GAME_OBJECT
 #define GAME_OBJECT
 
+/* for using */
 #include "../tools/array.hpp"
+
+/* for log */
 #include "../tools/tools__log.hpp"
 
 /* */
@@ -41,34 +44,36 @@ class Object
   public:
 
     /* */
-    Object()
+    Object ()
     {
-      this->add_my_type("Object");
+      this->get_my_types ().add ("Object");
 
       std::cout << std::endl;
-      tools__log::created("Object");
+      tools__log::created ("Object");
     }
 
     /* */
-    ~Object()
+    ~Object ()
     {
-      this->clear();
+      this->clear ();
 
-      tools__log::killed("Object");
+      tools__log::killed ("Object");
       std::cout << std::endl;
     }
   
     /* */
     void
-    save()
+    save ()
     {
       /* */
-      tools__cpp::save(
-        this->name,
-        this->my_types,
-        this->types_of_friends,
-        this->types_ignore, this->my_res
-      )
+      tools__cpp::save
+        (
+          this->name,
+          this->my_types,
+          this->types_of_friends,
+          this->types_ignore,
+          this->my_res
+        )
     }
   
     /* */
@@ -76,64 +81,65 @@ class Object
     load()
     {
       /* */
-      tools__cpp::load(
-        this->my_types,
-        this->types_of_friends,
-        this->types_ignore,
-        this->my_res
-      ) = tools__cpp::load(this->name)
+      tools__cpp::load
+        (
+          this->my_types,
+          this->types_of_friends,
+          this->types_ignore,
+          this->my_res
+        ) = tools__cpp::load (this->name)
     }
 
     /* */
     List
-    get_my_types()
+    get_my_types ()
     {
-      return this->my_types();
+      return this->my_types ();
     }
   
     /* */
     List
-    get_types_of_friends()
+    get_types_of_friends ()
     {
-      return this->types_of_friends();
+      return this->types_of_friends ();
     }
   
     /* */
     List
-    get_types_ignore()
+    get_types_ignore ()
     {
-      return this->types_ignore();
+      return this->types_ignore ();
     }
   
     /* */
     List
-    get_my_res()
+    get_my_res ()
     {
-      return this->my_res();
+      return this->my_res ();
     }
   
     /* */
     std::string
-    get_name()
+    get_name ()
     {
       return this->name;
     }
 
     /* */
     void
-    clear_Object()
+    clear_Object ()
     {
-      this->my_types.clear();
-      this->types_of_friends.clear();
-      this->types_ignore.clear();
-      this->my_res.clear();
+      this->my_types.clear ();
+      this->types_of_friends.clear ();
+      this->types_ignore.clear ();
+      this->my_res.clear ();
     }
   
     /* */
     void
-    clear()
+    clear ()
     {
-      this->clear_Object();
+      this->clear_Object ();
     }
 
   private:
