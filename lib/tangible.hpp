@@ -46,10 +46,12 @@
 #include "exp.hpp"    /* Exp */
 #include "xp.hpp"    /* Xp */
 
+/* */
 class Tangible : public Object
 {
   /* Example Tangibles: Essence Block Map Man ... */
-
+  
+  /* */
   public:
 
     /* */
@@ -63,9 +65,10 @@ class Tangible : public Object
     /* */
     ~Tangible ()
     {
-      tools__log::killed("Tangible");
+      tools__log::killed ("Tangible");
     }
-
+  
+  /* */
   private:
 
     /* XYZ: */
