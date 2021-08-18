@@ -24,13 +24,16 @@
  *
  */
 
-
+/* */
 #ifndef GAME_OBJECT_NOT__TANGIBLE_SLOT
 #define GAME_OBJECT_NOT__TANGIBLE_SLOT
 
-#include "not__tangible.hpp" // for inheritance
+/* for inheritance */
+#include "not__tangible.hpp"    /* NotTangible */
 
-#include "../tools/tools__log.hpp" // for log
+/* */
+#include "../tools/array.hpp"    /* Array */
+#include "../tools/tools__log.hpp"    /* for log */
 
 /* */
 class Slot: public NotTangible
@@ -58,24 +61,24 @@ class Slot: public NotTangible
     }
 
     /* */
-    void clearSlot()
+    void
+    clear_Slot()
     {
       this->clearObject();
-      this->clearTypesOfChanges();
+      this->types_of_changes.clear("types of changes");
     }
-
+    
     /* */
-    void clearTypesOfChanges()
+    void
+    clear()
     {
-      this->types_of_changes.clear();
-
-      tools__log::cleared("types of changes");
+      this->clear_Slot();
     }
 
   private:
 
-    /* типы влияющие на статистику объекта в котором нахожусь: */
-    std::vector<std::string> types_of_changes;
+    /* types that affect the statistics of the object I am in */
+    Array types_of_changes;
 };
 
 #endif /* GAME_OBJECT_NOT__TANGIBLE_SLOT */
