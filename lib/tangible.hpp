@@ -1,6 +1,6 @@
 /* INFO
  *
- * File: mouse.hpp
+ * File: tangible.hpp
  * Language: Cpp
  * Author: Dal Bo Yob
  * We: DBY Company
