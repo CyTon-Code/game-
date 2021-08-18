@@ -78,7 +78,6 @@ class Container : public NotTangible
     {
       this->clear_Container ();
     }
-
     
   /* */
   private:
@@ -87,5 +86,5 @@ class Container : public NotTangible
     Array my_res;
 };
 
-#endif // GAME_OBJECT_NOT__TANGIBLE_CONTAINER
+#endif /* GAME_OBJECT_NOT__TANGIBLE_CONTAINER */
 
