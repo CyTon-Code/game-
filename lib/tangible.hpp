@@ -31,16 +31,17 @@
  */
 
 
+/* */
 #ifndef GAME_OBJECT_TANGIBLE
 #define GAME_OBJECT_TANGIBLE
 
-/* for inheritance: */
+/* for inheritance */
 #include "object.hpp"    /* Object */
 
-/* for log: */
+/* for log */
 #include "../tools/tools__log.hpp"    /* tools__log */
 
-/* for using: */
+/* for using */
 #include "coordinates.hpp"    /* Coordinates */
 #include "exp.hpp"    /* Exp */
 #include "xp.hpp"    /* Xp */
@@ -52,15 +53,15 @@ class Tangible : public Object
   public:
 
     /* */
-    Tangible()
+    Tangible ()
     {
-      this->add_my_type("Tangible");
+      this->get_my_type().add ("Tangible");
 
-      tools__log::created("Tangible");
+      tools__log::created ("Tangible");
     }
 
     /* */
-    ~Tangible()
+    ~Tangible ()
     {
       tools__log::killed("Tangible");
     }
